@@ -82,24 +82,7 @@
         "tag": "自动选择",
         "type": "urltest",
         "outbounds": [
-          "alihk-grpc",
-          "alihk-tcp",
-          "bwh-grpc",
-          "bwh-tcp",
-          "bwh1-grpc",
-          "bwh1-tcp",
-          "bwh3-grpc",
-          "bwh3-tcp",
-          "dmit-grpc",
-          "dmit-tcp",
-          "dmit1-grpc",
-          "dmit1-tcp",
-          "dmit2-grpc",
-          "dmit2-tcp",
-          "mk-grpc",
-          "mk-tcp",
-          "sg-grpc",
-          "sg-tcp"
+          "{all}"
         ],
         "url": "https://www.gstatic.com/generate_204",
         "interval": "300s",
@@ -111,24 +94,7 @@
         "outbounds": [
           "自动选择",
           "全球直连",
-          "alihk-grpc",
-          "alihk-tcp",
-          "bwh-grpc",
-          "bwh-tcp",
-          "bwh1-grpc",
-          "bwh1-tcp",
-          "bwh3-grpc",
-          "bwh3-tcp",
-          "dmit-grpc",
-          "dmit-tcp",
-          "dmit1-grpc",
-          "dmit1-tcp",
-          "dmit2-grpc",
-          "dmit2-tcp",
-          "mk-grpc",
-          "mk-tcp",
-          "sg-grpc",
-          "sg-tcp"
+          "{all}"
         ],
         "default": "dmit1-grpc"
       },
@@ -138,24 +104,7 @@
         "outbounds": [
           "全球直连",
           "节点选择",
-          "alihk-grpc",
-          "alihk-tcp",
-          "bwh-grpc",
-          "bwh-tcp",
-          "bwh1-grpc",
-          "bwh1-tcp",
-          "bwh3-grpc",
-          "bwh3-tcp",
-          "dmit-grpc",
-          "dmit-tcp",
-          "dmit1-grpc",
-          "dmit1-tcp",
-          "dmit2-grpc",
-          "dmit2-tcp",
-          "mk-grpc",
-          "mk-tcp",
-          "sg-grpc",
-          "sg-tcp"
+          "{all}"
         ],
         "default": "全球直连"
       },
@@ -165,24 +114,7 @@
         "outbounds": [
           "全球直连",
           "节点选择",
-          "alihk-grpc",
-          "alihk-tcp",
-          "bwh-grpc",
-          "bwh-tcp",
-          "bwh1-grpc",
-          "bwh1-tcp",
-          "bwh3-grpc",
-          "bwh3-tcp",
-          "dmit-grpc",
-          "dmit-tcp",
-          "dmit1-grpc",
-          "dmit1-tcp",
-          "dmit2-grpc",
-          "dmit2-tcp",
-          "mk-grpc",
-          "mk-tcp",
-          "sg-grpc",
-          "sg-tcp"
+          "{all}"
         ],
         "default": "全球直连"
       },
@@ -192,24 +124,7 @@
         "outbounds": [
           "全球直连",
           "节点选择",
-          "alihk-grpc",
-          "alihk-tcp",
-          "bwh-grpc",
-          "bwh-tcp",
-          "bwh1-grpc",
-          "bwh1-tcp",
-          "bwh3-grpc",
-          "bwh3-tcp",
-          "dmit-grpc",
-          "dmit-tcp",
-          "dmit1-grpc",
-          "dmit1-tcp",
-          "dmit2-grpc",
-          "dmit2-tcp",
-          "mk-grpc",
-          "mk-tcp",
-          "sg-grpc",
-          "sg-tcp"
+          "{all}"
         ],
         "default": "全球直连"
       },
@@ -218,24 +133,7 @@
         "type": "selector",
         "outbounds": [
           "节点选择",
-          "alihk-grpc",
-          "alihk-tcp",
-          "bwh-grpc",
-          "bwh-tcp",
-          "bwh1-grpc",
-          "bwh1-tcp",
-          "bwh3-grpc",
-          "bwh3-tcp",
-          "dmit-grpc",
-          "dmit-tcp",
-          "dmit1-grpc",
-          "dmit1-tcp",
-          "dmit2-grpc",
-          "dmit2-tcp",
-          "mk-grpc",
-          "mk-tcp",
-          "sg-grpc",
-          "sg-tcp"
+          "{all}"
         ],
         "default": "mk-grpc"
       },
@@ -244,24 +142,7 @@
         "type": "selector",
         "outbounds": [
           "节点选择",
-          "alihk-grpc",
-          "alihk-tcp",
-          "bwh-grpc",
-          "bwh-tcp",
-          "bwh1-grpc",
-          "bwh1-tcp",
-          "bwh3-grpc",
-          "bwh3-tcp",
-          "dmit-grpc",
-          "dmit-tcp",
-          "dmit1-grpc",
-          "dmit1-tcp",
-          "dmit2-grpc",
-          "dmit2-tcp",
-          "mk-grpc",
-          "mk-tcp",
-          "sg-grpc",
-          "sg-tcp"
+          "{all}"
         ],
         "default": "bwh3-grpc"
       },
@@ -270,24 +151,7 @@
         "type": "selector",
         "outbounds": [
           "节点选择",
-          "alihk-grpc",
-          "alihk-tcp",
-          "bwh-grpc",
-          "bwh-tcp",
-          "bwh1-grpc",
-          "bwh1-tcp",
-          "bwh3-grpc",
-          "bwh3-tcp",
-          "dmit-grpc",
-          "dmit-tcp",
-          "dmit1-grpc",
-          "dmit1-tcp",
-          "dmit2-grpc",
-          "dmit2-tcp",
-          "mk-grpc",
-          "mk-tcp",
-          "sg-grpc",
-          "sg-tcp"
+          "{all}"
         ],
         "default": "bwh3-grpc"
       },
@@ -296,24 +160,7 @@
         "type": "selector",
         "outbounds": [
           "节点选择",
-          "alihk-grpc",
-          "alihk-tcp",
-          "bwh-grpc",
-          "bwh-tcp",
-          "bwh1-grpc",
-          "bwh1-tcp",
-          "bwh3-grpc",
-          "bwh3-tcp",
-          "dmit-grpc",
-          "dmit-tcp",
-          "dmit1-grpc",
-          "dmit1-tcp",
-          "dmit2-grpc",
-          "dmit2-tcp",
-          "mk-grpc",
-          "mk-tcp",
-          "sg-grpc",
-          "sg-tcp"
+          "{all}"
         ],
         "default": "bwh3-grpc"
       },
@@ -322,24 +169,7 @@
         "type": "selector",
         "outbounds": [
           "节点选择",
-          "alihk-grpc",
-          "alihk-tcp",
-          "bwh-grpc",
-          "bwh-tcp",
-          "bwh1-grpc",
-          "bwh1-tcp",
-          "bwh3-grpc",
-          "bwh3-tcp",
-          "dmit-grpc",
-          "dmit-tcp",
-          "dmit1-grpc",
-          "dmit1-tcp",
-          "dmit2-grpc",
-          "dmit2-tcp",
-          "mk-grpc",
-          "mk-tcp",
-          "sg-grpc",
-          "sg-tcp"
+          "{all}"
         ],
         "default": "dmit1-grpc"
       },
@@ -348,24 +178,7 @@
         "type": "selector",
         "outbounds": [
           "节点选择",
-          "alihk-grpc",
-          "alihk-tcp",
-          "bwh-grpc",
-          "bwh-tcp",
-          "bwh1-grpc",
-          "bwh1-tcp",
-          "bwh3-grpc",
-          "bwh3-tcp",
-          "dmit-grpc",
-          "dmit-tcp",
-          "dmit1-grpc",
-          "dmit1-tcp",
-          "dmit2-grpc",
-          "dmit2-tcp",
-          "mk-grpc",
-          "mk-tcp",
-          "sg-grpc",
-          "sg-tcp"
+          "{all}"
         ],
         "default": "bwh3-grpc"
       },
@@ -380,448 +193,8 @@
       {
         "type": "block",
         "tag": "block"
-      },
-      {
-        "tag": "alihk-grpc",
-        "type": "vless",
-        "server": "alihk.telex.app",
-        "server_port": 8017,
-        "uuid": "105aa3a8-8cc5-cf21-5bed-0e11d0de3aac",
-        "packet_encoding": "xudp",
-        "tls": {
-          "enabled": true,
-          "insecure": false,
-          "server_name": "amzn.com",
-          "utls": {
-            "enabled": true,
-            "fingerprint": "chrome"
-          },
-          "reality": {
-            "enabled": true,
-            "public_key": "uvWKbKxo3nMe4Ir2GvnmE0cGb63VgQM3scZtXsW4cB0",
-            "short_id": "b2"
-          }
-        },
-        "transport": {
-          "type": "grpc",
-          "service_name": "grpc"
-        }
-      },
-      {
-        "tag": "alihk-tcp",
-        "type": "vless",
-        "server": "alihk.telex.app",
-        "server_port": 6017,
-        "uuid": "105aa3a8-8cc5-cf21-5bed-0e11d0de3aac",
-        "packet_encoding": "xudp",
-        "flow": "xtls-rprx-vision",
-        "tls": {
-          "enabled": true,
-          "insecure": false,
-          "server_name": "amzn.com",
-          "utls": {
-            "enabled": true,
-            "fingerprint": "chrome"
-          },
-          "reality": {
-            "enabled": true,
-            "public_key": "uvWKbKxo3nMe4Ir2GvnmE0cGb63VgQM3scZtXsW4cB0",
-            "short_id": "b2"
-          }
-        }
-      },
-      {
-        "tag": "bwh-grpc",
-        "type": "vless",
-        "server": "bwh.telex.app",
-        "server_port": 8017,
-        "uuid": "105aa3a8-8cc5-cf21-5bed-0e11d0de3aac",
-        "packet_encoding": "xudp",
-        "tls": {
-          "enabled": true,
-          "insecure": false,
-          "server_name": "amzn.com",
-          "utls": {
-            "enabled": true,
-            "fingerprint": "chrome"
-          },
-          "reality": {
-            "enabled": true,
-            "public_key": "uvWKbKxo3nMe4Ir2GvnmE0cGb63VgQM3scZtXsW4cB0",
-            "short_id": "b2"
-          }
-        },
-        "transport": {
-          "type": "grpc",
-          "service_name": "grpc"
-        }
-      },
-      {
-        "tag": "bwh-tcp",
-        "type": "vless",
-        "server": "bwh.telex.app",
-        "server_port": 6017,
-        "uuid": "105aa3a8-8cc5-cf21-5bed-0e11d0de3aac",
-        "packet_encoding": "xudp",
-        "flow": "xtls-rprx-vision",
-        "tls": {
-          "enabled": true,
-          "insecure": false,
-          "server_name": "amzn.com",
-          "utls": {
-            "enabled": true,
-            "fingerprint": "chrome"
-          },
-          "reality": {
-            "enabled": true,
-            "public_key": "uvWKbKxo3nMe4Ir2GvnmE0cGb63VgQM3scZtXsW4cB0",
-            "short_id": "b2"
-          }
-        }
-      },
-      {
-        "tag": "bwh1-grpc",
-        "type": "vless",
-        "server": "bwh1.telex.app",
-        "server_port": 8017,
-        "uuid": "105aa3a8-8cc5-cf21-5bed-0e11d0de3aac",
-        "packet_encoding": "xudp",
-        "tls": {
-          "enabled": true,
-          "insecure": false,
-          "server_name": "amzn.com",
-          "utls": {
-            "enabled": true,
-            "fingerprint": "chrome"
-          },
-          "reality": {
-            "enabled": true,
-            "public_key": "uvWKbKxo3nMe4Ir2GvnmE0cGb63VgQM3scZtXsW4cB0",
-            "short_id": "b2"
-          }
-        },
-        "transport": {
-          "type": "grpc",
-          "service_name": "grpc"
-        }
-      },
-      {
-        "tag": "bwh1-tcp",
-        "type": "vless",
-        "server": "bwh1.telex.app",
-        "server_port": 6017,
-        "uuid": "105aa3a8-8cc5-cf21-5bed-0e11d0de3aac",
-        "packet_encoding": "xudp",
-        "flow": "xtls-rprx-vision",
-        "tls": {
-          "enabled": true,
-          "insecure": false,
-          "server_name": "amzn.com",
-          "utls": {
-            "enabled": true,
-            "fingerprint": "chrome"
-          },
-          "reality": {
-            "enabled": true,
-            "public_key": "uvWKbKxo3nMe4Ir2GvnmE0cGb63VgQM3scZtXsW4cB0",
-            "short_id": "b2"
-          }
-        }
-      },
-      {
-        "tag": "bwh3-grpc",
-        "type": "vless",
-        "server": "bwh3.telex.app",
-        "server_port": 8017,
-        "uuid": "105aa3a8-8cc5-cf21-5bed-0e11d0de3aac",
-        "packet_encoding": "xudp",
-        "tls": {
-          "enabled": true,
-          "insecure": false,
-          "server_name": "amzn.com",
-          "utls": {
-            "enabled": true,
-            "fingerprint": "chrome"
-          },
-          "reality": {
-            "enabled": true,
-            "public_key": "uvWKbKxo3nMe4Ir2GvnmE0cGb63VgQM3scZtXsW4cB0",
-            "short_id": "b2"
-          }
-        },
-        "transport": {
-          "type": "grpc",
-          "service_name": "grpc"
-        }
-      },
-      {
-        "tag": "bwh3-tcp",
-        "type": "vless",
-        "server": "bwh3.telex.app",
-        "server_port": 6017,
-        "uuid": "105aa3a8-8cc5-cf21-5bed-0e11d0de3aac",
-        "packet_encoding": "xudp",
-        "flow": "xtls-rprx-vision",
-        "tls": {
-          "enabled": true,
-          "insecure": false,
-          "server_name": "www.amazon.com",
-          "utls": {
-            "enabled": true,
-            "fingerprint": "chrome"
-          },
-          "reality": {
-            "enabled": true,
-            "public_key": "uvWKbKxo3nMe4Ir2GvnmE0cGb63VgQM3scZtXsW4cB0",
-            "short_id": "b2"
-          }
-        }
-      },
-      {
-        "tag": "dmit-grpc",
-        "type": "vless",
-        "server": "dmit.telex.app",
-        "server_port": 8017,
-        "uuid": "105aa3a8-8cc5-cf21-5bed-0e11d0de3aac",
-        "packet_encoding": "xudp",
-        "tls": {
-          "enabled": true,
-          "insecure": false,
-          "server_name": "amzn.com",
-          "utls": {
-            "enabled": true,
-            "fingerprint": "chrome"
-          },
-          "reality": {
-            "enabled": true,
-            "public_key": "uvWKbKxo3nMe4Ir2GvnmE0cGb63VgQM3scZtXsW4cB0",
-            "short_id": "b2"
-          }
-        },
-        "transport": {
-          "type": "grpc",
-          "service_name": "grpc"
-        }
-      },
-      {
-        "tag": "dmit-tcp",
-        "type": "vless",
-        "server": "dmit.telex.app",
-        "server_port": 6017,
-        "uuid": "105aa3a8-8cc5-cf21-5bed-0e11d0de3aac",
-        "packet_encoding": "xudp",
-        "flow": "xtls-rprx-vision",
-        "tls": {
-          "enabled": true,
-          "insecure": false,
-          "server_name": "amzn.com",
-          "utls": {
-            "enabled": true,
-            "fingerprint": "chrome"
-          },
-          "reality": {
-            "enabled": true,
-            "public_key": "uvWKbKxo3nMe4Ir2GvnmE0cGb63VgQM3scZtXsW4cB0",
-            "short_id": "b2"
-          }
-        }
-      },
-      {
-        "tag": "dmit1-grpc",
-        "type": "vless",
-        "server": "dmit1.telex.app",
-        "server_port": 8017,
-        "uuid": "105aa3a8-8cc5-cf21-5bed-0e11d0de3aac",
-        "packet_encoding": "xudp",
-        "tls": {
-          "enabled": true,
-          "insecure": false,
-          "server_name": "amzn.com",
-          "utls": {
-            "enabled": true,
-            "fingerprint": "chrome"
-          },
-          "reality": {
-            "enabled": true,
-            "public_key": "uvWKbKxo3nMe4Ir2GvnmE0cGb63VgQM3scZtXsW4cB0",
-            "short_id": "b2"
-          }
-        },
-        "transport": {
-          "type": "grpc",
-          "service_name": "grpc"
-        }
-      },
-      {
-        "tag": "dmit1-tcp",
-        "type": "vless",
-        "server": "dmit1.telex.app",
-        "server_port": 6017,
-        "uuid": "105aa3a8-8cc5-cf21-5bed-0e11d0de3aac",
-        "packet_encoding": "xudp",
-        "flow": "xtls-rprx-vision",
-        "tls": {
-          "enabled": true,
-          "insecure": false,
-          "server_name": "www.amazon.com",
-          "utls": {
-            "enabled": true,
-            "fingerprint": "chrome"
-          },
-          "reality": {
-            "enabled": true,
-            "public_key": "uvWKbKxo3nMe4Ir2GvnmE0cGb63VgQM3scZtXsW4cB0",
-            "short_id": "b2"
-          }
-        }
-      },
-      {
-        "tag": "dmit2-grpc",
-        "type": "vless",
-        "server": "dmit2.telex.app",
-        "server_port": 8017,
-        "uuid": "105aa3a8-8cc5-cf21-5bed-0e11d0de3aac",
-        "packet_encoding": "xudp",
-        "tls": {
-          "enabled": true,
-          "insecure": false,
-          "server_name": "amzn.com",
-          "utls": {
-            "enabled": true,
-            "fingerprint": "chrome"
-          },
-          "reality": {
-            "enabled": true,
-            "public_key": "uvWKbKxo3nMe4Ir2GvnmE0cGb63VgQM3scZtXsW4cB0",
-            "short_id": "b2"
-          }
-        },
-        "transport": {
-          "type": "grpc",
-          "service_name": "grpc"
-        }
-      },
-      {
-        "tag": "dmit2-tcp",
-        "type": "vless",
-        "server": "dmit2.telex.app",
-        "server_port": 6017,
-        "uuid": "105aa3a8-8cc5-cf21-5bed-0e11d0de3aac",
-        "packet_encoding": "xudp",
-        "flow": "xtls-rprx-vision",
-        "tls": {
-          "enabled": true,
-          "insecure": false,
-          "server_name": "www.amazon.com",
-          "utls": {
-            "enabled": true,
-            "fingerprint": "chrome"
-          },
-          "reality": {
-            "enabled": true,
-            "public_key": "uvWKbKxo3nMe4Ir2GvnmE0cGb63VgQM3scZtXsW4cB0",
-            "short_id": "b2"
-          }
-        }
-      },
-      {
-        "tag": "mk-grpc",
-        "type": "vless",
-        "server": "mk.telex.app",
-        "server_port": 8017,
-        "uuid": "105aa3a8-8cc5-cf21-5bed-0e11d0de3aac",
-        "packet_encoding": "xudp",
-        "tls": {
-          "enabled": true,
-          "insecure": false,
-          "server_name": "amzn.com",
-          "utls": {
-            "enabled": true,
-            "fingerprint": "chrome"
-          },
-          "reality": {
-            "enabled": true,
-            "public_key": "uvWKbKxo3nMe4Ir2GvnmE0cGb63VgQM3scZtXsW4cB0",
-            "short_id": "b2"
-          }
-        },
-        "transport": {
-          "type": "grpc",
-          "service_name": "grpc"
-        }
-      },
-      {
-        "tag": "mk-tcp",
-        "type": "vless",
-        "server": "mk.telex.app",
-        "server_port": 6017,
-        "uuid": "105aa3a8-8cc5-cf21-5bed-0e11d0de3aac",
-        "packet_encoding": "xudp",
-        "flow": "xtls-rprx-vision",
-        "tls": {
-          "enabled": true,
-          "insecure": false,
-          "server_name": "amzn.com",
-          "utls": {
-            "enabled": true,
-            "fingerprint": "chrome"
-          },
-          "reality": {
-            "enabled": true,
-            "public_key": "uvWKbKxo3nMe4Ir2GvnmE0cGb63VgQM3scZtXsW4cB0",
-            "short_id": "b2"
-          }
-        }
-      },
-      {
-        "tag": "sg-grpc",
-        "type": "vless",
-        "server": "sg.telex.app",
-        "server_port": 8017,
-        "uuid": "105aa3a8-8cc5-cf21-5bed-0e11d0de3aac",
-        "packet_encoding": "xudp",
-        "tls": {
-          "enabled": true,
-          "insecure": false,
-          "server_name": "amzn.com",
-          "utls": {
-            "enabled": true,
-            "fingerprint": "chrome"
-          },
-          "reality": {
-            "enabled": true,
-            "public_key": "uvWKbKxo3nMe4Ir2GvnmE0cGb63VgQM3scZtXsW4cB0",
-            "short_id": "b2"
-          }
-        },
-        "transport": {
-          "type": "grpc",
-          "service_name": "grpc"
-        }
-      },
-      {
-        "tag": "sg-tcp",
-        "type": "vless",
-        "server": "sg.telex.app",
-        "server_port": 6017,
-        "uuid": "105aa3a8-8cc5-cf21-5bed-0e11d0de3aac",
-        "packet_encoding": "xudp",
-        "flow": "xtls-rprx-vision",
-        "tls": {
-          "enabled": true,
-          "insecure": false,
-          "server_name": "amzn.com",
-          "utls": {
-            "enabled": true,
-            "fingerprint": "chrome"
-          },
-          "reality": {
-            "enabled": true,
-            "public_key": "uvWKbKxo3nMe4Ir2GvnmE0cGb63VgQM3scZtXsW4cB0",
-            "short_id": "b2"
-          }
-        }
       }
+      
     ],
     "route": {
       "rule_set": [
