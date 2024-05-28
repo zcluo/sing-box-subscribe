@@ -29,18 +29,7 @@
             "udp_fragment": true,
             "set_system_proxy": true
         },
-        {
-            "type": "mixed",
-            "listen": "::",
-            "listen_port": 2334,
-            "sniff": true,
-            "sniff_override_destination": true,
-            "domain_strategy": "prefer_ipv4",
-            "tcp_fast_open": true,
-            "tcp_multi_path": true,
-            "udp_fragment": true,
-            "set_system_proxy": false
-        },
+        
         {
             "type": "tun",
             "interface_name": "singbox",
@@ -53,9 +42,9 @@
             "stack": "system",
             "platform": {
                 "http_proxy": {
-                    "enabled": true,
+                    "enabled": false,
                     "server": "127.0.0.1",
-                    "server_port": 2334
+                    "server_port": 5330
                 }
             },
             "sniff": true,
