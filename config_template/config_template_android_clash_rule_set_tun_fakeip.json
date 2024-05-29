@@ -462,7 +462,7 @@
                         "invert": true
                     },
                     {
-                        "inbound": "tun",
+                        
                         "query_type": [
                             "A",
                             "AAAA"
