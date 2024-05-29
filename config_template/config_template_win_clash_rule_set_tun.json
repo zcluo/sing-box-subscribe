@@ -403,7 +403,7 @@
         "tag": "remote-dns",
         "address": "https://dns.google/dns-query",
         "address_resolver": "remote-resolver-dns",
-        "detour": "自动选择"
+        "detour": "节点选择"
       },
       {
         "tag": "local-dns",
