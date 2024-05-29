@@ -431,57 +431,64 @@
           }
         ],
         "rules": [
-          {
-            "outbound": "any",
-            "disable_cache": true,
-            "server": "local-dns"
-          },
-          {
-            "type": "logical",
-            "mode": "and",
-            "rules": [
-              {
-                "domain_suffix": [
-                  ".lan",
-                  ".localdomain",
-                  ".example",
-                  ".invalid",
-                  ".localhost",
-                  ".test",
-                  ".local",
-                  ".home.arpa",
-                  ".msftconnecttest.com",
-                  ".msftncsi.com",
-                  ".emex.top",
-                  ".telex.app"
+         {
+        "rule_set": "ADS",
+        "server": "block"
+      },
+            {
+                "outbound": "any",
+                "disable_cache": true,
+                "server": "local-dns"
+            },
+            {
+                "rule_set": "GEOSITE-CN",
+                "server": "local-dns"
+            },
+            {
+                "clash_mode": "direct",
+                "server": "local-dns"
+            },
+            {
+                "clash_mode": "global",
+                "server": "remote-dns"
+            },
+            {
+                "type": "logical",
+                "mode": "and",
+                "rules": [
+                    {
+                        "domain_suffix": [
+                            ".lan",
+                            ".localdomain",
+                            ".example",
+                            ".invalid",
+                            ".localhost",
+                            ".test",
+                            ".local",
+                            ".home.arpa",
+                            ".msftconnecttest.com",
+                            ".msftncsi.com",
+                            ".emex.top"
+                        ],
+                        "invert": true
+                    },
+                    {
+                        
+                        "query_type": [
+                            "A",
+                            "AAAA"
+                        ]
+                    }
                 ],
-                "invert": true
-              },
-              {
-                "query_type": [
-                  "A",
-                  "AAAA"
-                ]
-              }
-            ],
-            "server": "fakeip-dns"
-          },
-          {
-            "clash_mode": "direct",
-            "server": "local-dns"
-          },
-          {
-            "clash_mode": "global",
-            "server": "remote-dns"
-          },
-          {
-            "rule_set": "GEOSITE-CN",
-            "server": "local-dns"
-          },
-          {
-            "rule_set": "GEOLOCATION-!CN",
-            "server": "remote-dns"
-          }
+                "server": "fakeip-dns",
+                "rewrite_ttl": 1
+            },
+            
+            {
+                "rule_set": "GEOLOCATION-!CN",
+                "server": "remote-dns"
+            }
+            
         ],
         "fakeip": {
           "enabled": true,
