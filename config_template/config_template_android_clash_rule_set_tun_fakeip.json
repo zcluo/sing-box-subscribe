@@ -30,6 +30,7 @@
             "set_system_proxy": false
         },
         {
+            "tag": "tun",
             "type": "tun",
             "interface_name": "singbox",
             "inet4_address": "172.19.0.1/30",
@@ -389,14 +390,14 @@
         "servers": [
             {
         "tag": "remote-dns",
-        "address": "https://bwh3.telex.app:7443/dns-query",
-        "address_resolver": "remote-resolver-dns",
-        "detour": "direct"
+        "address": "https://8.8.8.8/dns-query",
+        
+        "detour": "节点选择"
       },
       {
         "tag": "local-dns",
-        "address": "https://sh.telex.app:7443/dns-query",
-        "address_resolver": "resolver-dns",
+        "address": "https://https://120.53.53.53/dns-query/dns-query",
+        
         "detour": "direct"
       },
       {
@@ -424,6 +425,18 @@
                 "disable_cache": true,
                 "server": "local-dns"
             },
+{
+                "rule_set": "GEOSITE-CN",
+                "server": "local-dns"
+            },
+            {
+                "clash_mode": "direct",
+                "server": "local-dns"
+            },
+            {
+                "clash_mode": "global",
+                "server": "remote-dns"
+            },
             {
                 "type": "logical",
                 "mode": "and",
@@ -440,36 +453,27 @@
                             ".home.arpa",
                             ".msftconnecttest.com",
                             ".msftncsi.com",
-                            ".emex.top",
-                            ".telex.app"
+                            ".emex.top"
                         ],
                         "invert": true
                     },
                     {
+                        "inbound": "tun",
                         "query_type": [
                             "A",
                             "AAAA"
                         ]
                     }
                 ],
-                "server": "fakeip-dns"
+                "server": "fakeip-dns",
+        "rewrite_ttl": 1
             },
-            {
-                "clash_mode": "direct",
-                "server": "local-dns"
-            },
-            {
-                "clash_mode": "global",
-                "server": "remote-dns"
-            },
-            {
-                "rule_set": "GEOSITE-CN",
-                "server": "local-dns"
-            },
-            {
+            
+{
                 "rule_set": "GEOLOCATION-!CN",
                 "server": "remote-dns"
-            }
+            },
+            
         ],
         "fakeip": {
             "enabled": true,
@@ -477,6 +481,7 @@
             "inet6_range": "fc00::/18"
         },
         "final": "remote-dns",
+        "independent_cache": true,
         "strategy": "prefer_ipv4"
     }
 }
