@@ -396,7 +396,7 @@
       },
       {
         "tag": "local-dns",
-        "address": "https://https://120.53.53.53/dns-query/dns-query",
+        "address": "https://120.53.53.53/dns-query/dns-query",
         
         "detour": "direct"
       },
