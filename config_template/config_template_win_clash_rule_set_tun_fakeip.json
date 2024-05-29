@@ -400,22 +400,22 @@
     "dns": {
         "servers": [
             {
-                "tag": "remote-dns",
-                "address": "https://dns.google/dns-query",
-                "address_resolver": "remote-resolver-dns",
-                "detour": "bwh3-grpc"
-            },
-            {
-                "tag": "local-dns",
-                "address": "https://dns.alidns.com/dns-query",
-                "address_resolver": "resolver-dns",
-                "detour": "direct"
-            },
-          {
-            "tag": "resolver-dns",
-            "address": "223.5.5.5",
-            "detour": "direct"
-          },
+        "tag": "remote-dns",
+        "address": "https://bwh3.telex.app:7443/dns-query",
+        "address_resolver": "remote-resolver-dns",
+        "detour": "direct"
+      },
+      {
+        "tag": "local-dns",
+        "address": "https://sh.telex.app:7443/dns-query",
+        "address_resolver": "resolver-dns",
+        "detour": "direct"
+      },
+      {
+        "tag": "resolver-dns",
+        "address": "223.5.5.5",
+        "detour": "direct"
+      },
           {
             "tag": "remote-resolver-dns",
             "address": "223.5.5.5",
