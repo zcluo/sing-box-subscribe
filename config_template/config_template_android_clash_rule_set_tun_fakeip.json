@@ -421,11 +421,15 @@
         ],
         "rules": [
             {
+        "rule_set": "ADS",
+        "server": "block"
+      },
+            {
                 "outbound": "any",
                 "disable_cache": true,
                 "server": "local-dns"
             },
-{
+            {
                 "rule_set": "GEOSITE-CN",
                 "server": "local-dns"
             },
@@ -466,13 +470,13 @@
                     }
                 ],
                 "server": "fakeip-dns",
-        "rewrite_ttl": 1
+                "rewrite_ttl": 1
             },
             
-{
+            {
                 "rule_set": "GEOLOCATION-!CN",
                 "server": "remote-dns"
-            },
+            }
             
         ],
         "fakeip": {
