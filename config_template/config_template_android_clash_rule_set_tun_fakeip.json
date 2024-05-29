@@ -390,14 +390,14 @@
         "servers": [
             {
         "tag": "remote-dns",
-        "address": "https://8.8.8.8/dns-query",
-        
-        "detour": "节点选择"
+        "address": "https://bwh3.telex.app:7443/dns-query",
+        "address_resolver": "remote-resolver-dns",
+        "detour": "direct"
       },
       {
         "tag": "local-dns",
-        "address": "https://120.53.53.53/dns-query/dns-query",
-        
+        "address": "https://sh.telex.app:7443/dns-query",
+        "address_resolver": "resolver-dns",
         "detour": "direct"
       },
       {
