@@ -30,6 +30,18 @@
             "set_system_proxy": false
         },
         {
+            "type": "mixed",
+            "listen": "::",
+            "listen_port": 2334,
+            "sniff": true,
+            "sniff_override_destination": true,
+            "domain_strategy": "prefer_ipv4",
+            "tcp_fast_open": true,
+            "tcp_multi_path": true,
+            "udp_fragment": true,
+            "set_system_proxy": false
+        },
+        {
             "tag": "tun",
             "type": "tun",
             "interface_name": "singbox",
@@ -44,7 +56,7 @@
                 "http_proxy": {
                     "enabled": false,
                     "server": "127.0.0.1",
-                    "server_port": 5330
+                    "server_port": 2334
                 }
             },
             "sniff": true,
@@ -85,7 +97,7 @@
                 "全球直连",
                 "{all}"
             ],
-            "default": "dmit1-grpc"
+            "default": "dmit2-grpc"
         },
         {
             "tag": "漏网之鱼",
@@ -142,7 +154,7 @@
                 "节点选择",
                 "{all}"
             ],
-            "default": "bwh3-grpc"
+            "default": "dmit2-grpc"
         },
         {
             "tag": "AI",
@@ -160,7 +172,7 @@
                 "节点选择",
                 "{all}"
             ],
-            "default": "dmit1-grpc"
+            "default": "dmit2-grpc"
         },
         {
             "tag": "Telegram",
@@ -389,26 +401,24 @@
     "dns": {
         "servers": [
             {
-        "tag": "remote-dns",
-        "address": "https://bwh3.telex.app:7443/dns-query",
-        "address_resolver": "remote-resolver-dns",
-        "detour": "direct"
-      },
-      {
-        "tag": "local-dns",
-        "address": "https://sh.telex.app:7443/dns-query",
-        "address_resolver": "resolver-dns",
-        "detour": "direct"
-      },
-      {
-        "tag": "resolver-dns",
-        "address": "223.5.5.5",
-        "detour": "direct"
-      },
+                "tag": "remote-dns",
+                "address": "https://8.8.8.8/dns-query",
+                "detour": "节点选择"
+            },
             {
-                "tag": "remote-resolver-dns",
+                "tag": "local-dns",
+                "address": "https://120.53.53.53/dns-query",
+                "detour": "direct"
+            },
+            {
+                "tag": "resolver-dns",
                 "address": "223.5.5.5",
                 "detour": "direct"
+            },
+            {
+                "tag": "remote-resolver-dns",
+                "address": "1.1.1.1",
+                "detour": "节点选择"
             },
             {
                 "tag": "fakeip-dns",
@@ -421,9 +431,9 @@
         ],
         "rules": [
             {
-        "rule_set": "ADS",
-        "server": "block"
-      },
+                "rule_set": "ADS",
+                "server": "block"
+            },
             {
                 "outbound": "any",
                 "disable_cache": true,
@@ -462,22 +472,21 @@
                         "invert": true
                     },
                     {
-                        
                         "query_type": [
                             "A",
                             "AAAA"
                         ]
+                    },
+                    {
+                        "inbound": "tun"
                     }
                 ],
-                "server": "fakeip-dns",
-                "rewrite_ttl": 1
+                "server": "fakeip-dns"
             },
-            
             {
                 "rule_set": "GEOLOCATION-!CN",
                 "server": "remote-dns"
             }
-            
         ],
         "fakeip": {
             "enabled": true,
