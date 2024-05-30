@@ -419,10 +419,7 @@
         "address": "1.1.1.1",
         "detour": "节点选择"
       },
-      {
-        "tag": "fakeip-dns",
-        "address": "fakeip"
-      },
+      
       {
         "tag": "block",
         "address": "rcode://success"
