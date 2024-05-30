@@ -403,13 +403,11 @@
             {
                 "tag": "remote-dns",
                 "address": "https://8.8.8.8/dns-query",
-                "address_resolver": "remote-resolver-dns",
                 "detour": "节点选择"
             },
             {
                 "tag": "local-dns",
                 "address": "https://120.53.53.53/dns-query",
-                "address_resolver": "resolver-dns",
                 "detour": "direct"
             },
             {
@@ -419,7 +417,7 @@
             },
             {
                 "tag": "remote-resolver-dns",
-                "address": "8.8.4.4",
+                "address": "1.1.1.1",
                 "detour": "节点选择"
             },
             {
