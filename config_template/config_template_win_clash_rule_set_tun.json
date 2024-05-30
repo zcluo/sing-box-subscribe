@@ -401,13 +401,13 @@
     "servers": [
       {
         "tag": "remote-dns",
-        "address": "https://bwh3.telex.app:7443/dns-query",
+        "address": "https://8.8.8.8/dns-query",
         "address_resolver": "remote-resolver-dns",
-        "detour": "direct"
+        "detour": "节点选择"
       },
       {
         "tag": "local-dns",
-        "address": "https://sh.telex.app:7443/dns-query",
+        "address": "https://120.53.53.53/dns-query",
         "address_resolver": "resolver-dns",
         "detour": "direct"
       },
@@ -418,8 +418,12 @@
       },
       {
         "tag": "remote-resolver-dns",
-        "address": "223.5.5.5",
-        "detour": "direct"
+        "address": "8.8.4.4",
+        "detour": "节点选择"
+      },
+      {
+        "tag": "fakeip-dns",
+        "address": "fakeip"
       },
       {
         "tag": "block",
@@ -455,6 +459,7 @@
       "inet6_range": "fc00::/18"
     },
     "final": "remote-dns",
+    "independent_cache": true,
     "strategy": "prefer_ipv4"
   }
 }
