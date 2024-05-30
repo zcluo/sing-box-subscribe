@@ -200,6 +200,13 @@
                 "download_detour": "全球直连"
             },
             {
+                "tag": "CATEGORY-PORN",
+                "type": "remote",
+                "format": "binary",
+                "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-porn.srs",
+                "download_detour": "全球直连"
+            },
+            {
                 "tag": "AI@ALL",
                 "type": "remote",
                 "format": "binary",
@@ -305,6 +312,10 @@
             },
             {
                 "rule_set": "OPENAI@ADS",
+                "outbound": "全球拦截"
+            },
+            {
+                "rule_set": "CATEGORY-PORN",
                 "outbound": "全球拦截"
             },
             {
@@ -414,6 +425,14 @@
             }
         ],
         "rules": [
+            {
+                "rule_set": "ADS",
+                "server": "block"
+            },
+            {
+                "rule_set": "CATEGORY-PORN",
+                "server": "block"
+            },
             {
                 "outbound": "any",
                 "disable_cache": true,
