@@ -42,6 +42,7 @@
         "set_system_proxy": false
       },
       {
+        "tag": "tun",
         "type": "tun",
         "interface_name": "singbox",
         "inet4_address": "172.19.0.1/30",
