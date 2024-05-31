@@ -12,8 +12,8 @@
             "default_mode": "rule"
         },
         "cache_file": {
-            "enabled": true,
-            "store_fakeip": true
+            "enabled": false,
+            "store_fakeip": false
         }
     },
     "inbounds": [
@@ -22,10 +22,10 @@
             "listen": "::",
             "listen_port": 5330,
             "sniff": true,
-            "sniff_override_destination": false,
+            "sniff_override_destination": true,
             "domain_strategy": "prefer_ipv4",
-            "tcp_fast_open": false,
-            "tcp_multi_path": false,
+            "tcp_fast_open": true,
+            "tcp_multi_path": true,
             "udp_fragment": true,
             "set_system_proxy": false
         },
@@ -37,7 +37,7 @@
             "mtu": 9000,
             "auto_route": true,
             "strict_route": true,
-            "endpoint_independent_nat": false,
+            "endpoint_independent_nat": true,
             "stack": "system",
             "platform": {
                 "http_proxy": {
@@ -47,7 +47,7 @@
                 }
             },
             "sniff": true,
-            "sniff_override_destination": false,
+            "sniff_override_destination": true,
             "domain_strategy": "prefer_ipv4"
         }
     ],
