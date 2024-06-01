@@ -97,7 +97,7 @@
                 "全球直连",
                 "{all}"
             ],
-            "default": "dmit2-grpc"
+            "default": "dmit1-grpc"
         },
         {
             "tag": "漏网之鱼",
@@ -145,7 +145,7 @@
                 "节点选择",
                 "{all}"
             ],
-            "default": "bwh3-grpc"
+            "default": "dmit1-grpc"
         },
         {
             "tag": "GitHub",
@@ -154,7 +154,7 @@
                 "节点选择",
                 "{all}"
             ],
-            "default": "dmit2-grpc"
+            "default": "dmit1-grpc"
         },
         {
             "tag": "AI",
@@ -172,7 +172,7 @@
                 "节点选择",
                 "{all}"
             ],
-            "default": "dmit2-grpc"
+            "default": "dmit1-grpc"
         },
         {
             "tag": "Telegram",
@@ -181,7 +181,7 @@
                 "节点选择",
                 "{all}"
             ],
-            "default": "bwh3-grpc"
+            "default": "dmit1-grpc"
         },
         {
             "type": "direct",
