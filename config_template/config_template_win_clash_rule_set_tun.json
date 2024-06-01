@@ -316,6 +316,13 @@
           "format": "binary",
           "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs",
           "download_detour": "全球直连"
+        },
+        {
+            "tag": "GEOIP-CN",
+            "type": "remote",
+            "format": "binary",
+            "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs",
+            "download_detour": "全球直连"
         }
       ],
       "rules": [
@@ -374,6 +381,10 @@
         {
           "rule_set": "GEOSITE-TELEGRAM",
           "outbound": "Telegram"
+        },
+        {
+          "rule_set": ["GEOSITE-CN", "GEOIP-CN"],
+          "outbound": "全球直连"
         },
         {
           "protocol": "dns",
