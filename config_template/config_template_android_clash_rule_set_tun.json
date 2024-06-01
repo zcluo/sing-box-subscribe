@@ -94,7 +94,7 @@
                 "节点选择",
                 "{all}"
             ],
-            "default": "全球直连"
+            "default": "节点选择"
         },
         {
             "tag": "Microsoft",
