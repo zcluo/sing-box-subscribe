@@ -1,7 +1,7 @@
 {
     "log": {
         "disabled": false,
-        "level": "warn",
+        "level": "info",
         "timestamp": true
     },
     "inbounds": [
@@ -98,7 +98,7 @@
                 "domain_suffix": [
                     "annas-archive.gs"
                 ],
-                "outbound": "cfg-dmit1-grpc-out"
+                "outbound": "dmit1-grpc"
             },
             {
                 "rule_set": [
@@ -111,7 +111,7 @@
                     "cfg-telegramip-rule",
                     "cfg-telegramsite-rule"
                 ],
-                "outbound": "cfg-bwh3-grpc-out"
+                "outbound": "bwh3-grpc"
             },
             {
                 "rule_set": [
@@ -119,38 +119,38 @@
                     "cfg-metacubex_geoip_netflix-rule",
                     "cfg-metacubex_geosite_netflix-rule"
                 ],
-                "outbound": "cfg-mk-grpc-out"
+                "outbound": "mk-grpc"
             },
             {
                 "rule_set": [
                     "cfg-ai-rule"
                 ],
-                "outbound": "cfg-bwh3-grpc-out"
+                "outbound": "bwh3-grpc"
             },
             {
                 "rule_set": [
                     "cfg-youtube-rule"
                 ],
-                "outbound": "cfg-dmit1-grpc-out"
+                "outbound": "dmit1-grpc"
             },
             {
                 "rule_set": [
                     "cfg-googlesite-rule",
                     "cfg-googleip-rule"
                 ],
-                "outbound": "cfg-bwh3-grpc-out"
+                "outbound": "bwh3-grpc"
             },
             {
                 "rule_set": [
                     "cfg-tiktok-rule"
                 ],
-                "outbound": "cfg-bwh3-grpc-out"
+                "outbound": "bwh3-grpc"
             },
             {
                 "rule_set": [
                     "cfg-geosite_geolocation_notcn-rule"
                 ],
-                "outbound": "cfg-dmit1-grpc-out"
+                "outbound": "dmit1-grpc"
             }
         ],
         "rule_set": [
