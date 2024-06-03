@@ -147,126 +147,126 @@
                 "tag": "cfg-geosite_geolocation_notcn-rule",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/geolocation-!cn.srs",
-                "download_detour": "cfg-bwh3-grpc-out"
+                "download_detour": "bwh3-grpc"
             },
             {
                 "type": "remote",
                 "tag": "cfg-geosite_geolocation_cn-rule",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/geolocation-cn.srs",
-                "download_detour": "cfg-bwh3-grpc-out"
+                "download_detour": "bwh3-grpc"
             },
             {
                 "type": "remote",
                 "tag": "cfg-geoip_cn-rule",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs",
-                "download_detour": "cfg-bwh3-grpc-out"
+                "download_detour": "bwh3-grpc"
             },
             {
                 "type": "remote",
                 "tag": "cfg-geosite_cn-rule",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs",
-                "download_detour": "cfg-bwh3-grpc-out"
+                "download_detour": "bwh3-grpc"
             },
             {
                 "type": "remote",
                 "tag": "cfg-geosite_private-rule",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/private.srs",
-                "download_detour": "cfg-bwh3-grpc-out"
+                "download_detour": "bwh3-grpc"
             },
             {
                 "type": "remote",
                 "tag": "cfg-geosite_category_ads_all-rule",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ads-all.srs",
-                "download_detour": "cfg-bwh3-grpc-out"
+                "download_detour": "bwh3-grpc"
             },
             {
                 "type": "remote",
                 "tag": "cfg-ai-rule",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/sing-box-ruleset/ai.srs",
-                "download_detour": "cfg-bwh3-grpc-out"
+                "download_detour": "bwh3-grpc"
             },
             {
                 "type": "remote",
                 "tag": "cfg-telegramip-rule",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs",
-                "download_detour": "cfg-bwh3-grpc-out"
+                "download_detour": "bwh3-grpc"
             },
             {
                 "type": "remote",
                 "tag": "cfg-telegramsite-rule",
                 "format": "binary",
                 "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/telegram.srs",
-                "download_detour": "cfg-bwh3-grpc-out"
+                "download_detour": "bwh3-grpc"
             },
             {
                 "type": "remote",
                 "tag": "cfg-youtube-rule",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/youtube.srs",
-                "download_detour": "cfg-bwh3-grpc-out"
+                "download_detour": "bwh3-grpc"
             },
             {
                 "type": "remote",
                 "tag": "cfg-tiktok-rule",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/tiktok@!cn.srs",
-                "download_detour": "cfg-bwh3-grpc-out"
+                "download_detour": "bwh3-grpc"
             },
             {
                 "type": "remote",
                 "tag": "cfg-microsoft-rule",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/microsoft.srs",
-                "download_detour": "cfg-bwh3-grpc-out"
+                "download_detour": "bwh3-grpc"
             },
             {
                 "type": "remote",
                 "tag": "cfg-googlesite-rule",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/google.srs",
-                "download_detour": "cfg-bwh3-grpc-out"
+                "download_detour": "bwh3-grpc"
             },
             {
                 "type": "remote",
                 "tag": "cfg-googleip-rule",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/google.srs",
-                "download_detour": "cfg-bwh3-grpc-out"
+                "download_detour": "bwh3-grpc"
             },
             {
                 "type": "remote",
                 "tag": "cfg-geosite_netflix-rule",
                 "format": "binary",
                 "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-netflix.srs",
-                "download_detour": "cfg-bwh3-grpc-out"
+                "download_detour": "bwh3-grpc"
             },
             {
                 "type": "remote",
                 "tag": "cfg-metacubex_geoip_netflix-rule",
                 "format": "binary",
                 "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/netflix.srs",
-                "download_detour": "cfg-bwh3-grpc-out"
+                "download_detour": "bwh3-grpc"
             },
             {
                 "type": "remote",
                 "tag": "cfg-metacubex_geosite_netflix-rule",
                 "format": "binary",
                 "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/netflix.srs",
-                "download_detour": "cfg-bwh3-grpc-out"
+                "download_detour": "bwh3-grpc"
             },
             {
                 "type": "remote",
                 "tag": "cfg-category_porn-rule",
                 "format": "binary",
                 "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-porn.srs",
-                "download_detour": "cfg-bwh3-grpc-out"
+                "download_detour": "bwh3-grpc"
             }
         ],
         "auto_detect_interface": true,
@@ -292,18 +292,18 @@
             {
                 "tag": "cfg-googledns-dns",
                 "address": "https://8.8.8.8/dns-query",
-                "detour": "cfg-dmit1-grpc-out"
+                "detour": "dmit1-grpc"
             },
             {
                 "tag": "cfg-adguarddns-dns",
                 "address": "https://dns.adguard.com/dns-query",
                 "address_resolver": "cfg-dnspod-dns",
-                "detour": "cfg-dmit1-grpc-out"
+                "detour": "dmit1-grpc"
             },
             {
                 "tag": "cfg-1111dns-dns",
                 "address": "https://1.1.1.1/dns-query",
-                "detour": "cfg-dmit1-grpc-out"
+                "detour": "dmit1-grpc"
             },
             {
                 "tag": "cfg-block-dns",
@@ -327,7 +327,7 @@
             {
                 "tag": "cfg-googleh3dns-dns",
                 "address": "h3://8.8.8.8/dns-query",
-                "detour": "cfg-dmit1-grpc-out"
+                "detour": "dmit1-grpc"
             },
             {
                 "tag": "cfg-googleudpdns-dns",
