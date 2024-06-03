@@ -393,10 +393,7 @@
                     "cfg-geosite_netflix-rule",
                     "cfg-metacubex_geosite_netflix-rule"
                 ],
-                "outbound": [
-                    "block-out",
-                    "{all}"
-                ],
+                "outbound": "any",
                 "server": "cfg-googledns-dns",
                 "rewrite_ttl": 60
             },
