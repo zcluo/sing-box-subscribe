@@ -4,177 +4,6 @@
         "level": "warn",
         "timestamp": true
     },
-    "dns": {
-        "servers": [
-            {
-                "tag": "block-dns",
-                "address": "rcode://name_error"
-            },
-            {
-                "tag": "cfg-alidns-dns",
-                "address": "223.5.5.5",
-                "detour": "direct-out"
-            },
-            {
-                "tag": "cfg-dnspod-dns",
-                "address": "https://doh.pub/dns-query",
-                "address_resolver": "cfg-alidns-dns",
-                "detour": "direct-out"
-            },
-            {
-                "tag": "cfg-googledns-dns",
-                "address": "https://8.8.8.8/dns-query",
-                "detour": "cfg-dmit1-grpc-out"
-            },
-            {
-                "tag": "cfg-adguarddns-dns",
-                "address": "https://dns.adguard.com/dns-query",
-                "address_resolver": "cfg-dnspod-dns",
-                "detour": "cfg-dmit1-grpc-out"
-            },
-            {
-                "tag": "cfg-1111dns-dns",
-                "address": "https://1.1.1.1/dns-query",
-                "detour": "cfg-dmit1-grpc-out"
-            },
-            {
-                "tag": "cfg-block-dns",
-                "address": "rcode://refused",
-                "detour": "direct-out"
-            },
-            {
-                "tag": "cfg-bwh3dns-dns",
-                "address": "https://bwh3.telex.app:7443/dns-query",
-                "address_resolver": "cfg-alidns-dns",
-                "address_strategy": "prefer_ipv4",
-                "detour": "direct-out"
-            },
-            {
-                "tag": "cfg-shdns-dns",
-                "address": "https://sh.telex.app:7443/dns-query",
-                "address_resolver": "cfg-alidns-dns",
-                "address_strategy": "prefer_ipv4",
-                "detour": "direct-out"
-            },
-            {
-                "tag": "cfg-googleh3dns-dns",
-                "address": "h3://8.8.8.8/dns-query",
-                "detour": "cfg-dmit1-grpc-out"
-            },
-            {
-                "tag": "cfg-googleudpdns-dns",
-                "address": "8.8.4.4",
-                "detour": "direct-out"
-            },
-            {
-                "tag": "fakeip-dns",
-                "address": "fakeip"
-            }
-        ],
-        "rules": [
-            {
-                "protocol": [
-                    "http",
-                    "tls",
-                    "quic",
-                    "dns",
-                    "stun"
-                ],
-                "rule_set": [
-                    "cfg-geosite_category_ads_all-rule",
-                    "cfg-category_porn-rule"
-                ],
-                "outbound": "any",
-                "server": "block-dns",
-                "rewrite_ttl": 60
-            },
-            {
-                "protocol": [
-                    "http",
-                    "tls",
-                    "quic",
-                    "dns",
-                    "stun"
-                ],
-                "rule_set": [
-                    "cfg-geosite_geolocation_cn-rule",
-                    "cfg-geosite_cn-rule"
-                ],
-                "outbound": [
-                    "direct-out",
-                    "block-out"
-                ],
-                "server": "cfg-alidns-dns",
-                "rewrite_ttl": 60
-            },
-            {
-                "protocol": [
-                    "http",
-                    "tls",
-                    "quic",
-                    "dns",
-                    "stun"
-                ],
-                "rule_set": [
-                    "cfg-geosite_geolocation_notcn-rule",
-                    "cfg-telegramsite-rule",
-                    "cfg-youtube-rule",
-                    "cfg-tiktok-rule",
-                    "cfg-microsoft-rule",
-                    "cfg-googlesite-rule",
-                    "cfg-geosite_netflix-rule",
-                    "cfg-metacubex_geosite_netflix-rule"
-                ],
-                "outbound": [
-                    "block-out",
-                    "{all}"
-                ],
-                "server": "cfg-googledns-dns",
-                "rewrite_ttl": 60
-            },
-            {
-                "type": "logical",
-                "mode": "and",
-                "rules": [
-                    {
-                        "domain_suffix": [
-                            ".lan",
-                            ".localdomain",
-                            ".example",
-                            ".invalid",
-                            ".localhost",
-                            ".test",
-                            ".local",
-                            ".home.arpa",
-                            ".msftconnecttest.com",
-                            ".msftncsi.com",
-                            ".emex.top"
-                        ],
-                        "invert": true
-                    },
-                    {
-                        "query_type": [
-                            "A",
-                            "AAAA"
-                        ]
-                    },
-                    {
-                        "inbound": "tun"
-                    }
-                ],
-                "server": "fakeip-dns"
-            }
-        ],
-        "fakeip": {
-            "enabled": true,
-            "inet4_range": "198.18.0.1/16",
-            "inet6_range": "fc00::/18"
-        },
-        "disable_cache": false,
-        "disable_expire": false,
-        "independent_cache": true,
-        "final": "cfg-alidns-dns"
-    },
     "inbounds": [
         {
             "type": "direct",
@@ -442,6 +271,177 @@
         ],
         "auto_detect_interface": true,
         "final": "direct-out"
+    },
+    "dns": {
+        "servers": [
+            {
+                "tag": "block-dns",
+                "address": "rcode://name_error"
+            },
+            {
+                "tag": "cfg-alidns-dns",
+                "address": "223.5.5.5",
+                "detour": "direct-out"
+            },
+            {
+                "tag": "cfg-dnspod-dns",
+                "address": "https://doh.pub/dns-query",
+                "address_resolver": "cfg-alidns-dns",
+                "detour": "direct-out"
+            },
+            {
+                "tag": "cfg-googledns-dns",
+                "address": "https://8.8.8.8/dns-query",
+                "detour": "cfg-dmit1-grpc-out"
+            },
+            {
+                "tag": "cfg-adguarddns-dns",
+                "address": "https://dns.adguard.com/dns-query",
+                "address_resolver": "cfg-dnspod-dns",
+                "detour": "cfg-dmit1-grpc-out"
+            },
+            {
+                "tag": "cfg-1111dns-dns",
+                "address": "https://1.1.1.1/dns-query",
+                "detour": "cfg-dmit1-grpc-out"
+            },
+            {
+                "tag": "cfg-block-dns",
+                "address": "rcode://refused",
+                "detour": "direct-out"
+            },
+            {
+                "tag": "cfg-bwh3dns-dns",
+                "address": "https://bwh3.telex.app:7443/dns-query",
+                "address_resolver": "cfg-alidns-dns",
+                "address_strategy": "prefer_ipv4",
+                "detour": "direct-out"
+            },
+            {
+                "tag": "cfg-shdns-dns",
+                "address": "https://sh.telex.app:7443/dns-query",
+                "address_resolver": "cfg-alidns-dns",
+                "address_strategy": "prefer_ipv4",
+                "detour": "direct-out"
+            },
+            {
+                "tag": "cfg-googleh3dns-dns",
+                "address": "h3://8.8.8.8/dns-query",
+                "detour": "cfg-dmit1-grpc-out"
+            },
+            {
+                "tag": "cfg-googleudpdns-dns",
+                "address": "8.8.4.4",
+                "detour": "direct-out"
+            },
+            {
+                "tag": "fakeip-dns",
+                "address": "fakeip"
+            }
+        ],
+        "rules": [
+            {
+                "protocol": [
+                    "http",
+                    "tls",
+                    "quic",
+                    "dns",
+                    "stun"
+                ],
+                "rule_set": [
+                    "cfg-geosite_category_ads_all-rule",
+                    "cfg-category_porn-rule"
+                ],
+                "outbound": "any",
+                "server": "block-dns",
+                "rewrite_ttl": 60
+            },
+            {
+                "protocol": [
+                    "http",
+                    "tls",
+                    "quic",
+                    "dns",
+                    "stun"
+                ],
+                "rule_set": [
+                    "cfg-geosite_geolocation_cn-rule",
+                    "cfg-geosite_cn-rule"
+                ],
+                "outbound": [
+                    "direct-out",
+                    "block-out"
+                ],
+                "server": "cfg-alidns-dns",
+                "rewrite_ttl": 60
+            },
+            {
+                "protocol": [
+                    "http",
+                    "tls",
+                    "quic",
+                    "dns",
+                    "stun"
+                ],
+                "rule_set": [
+                    "cfg-geosite_geolocation_notcn-rule",
+                    "cfg-telegramsite-rule",
+                    "cfg-youtube-rule",
+                    "cfg-tiktok-rule",
+                    "cfg-microsoft-rule",
+                    "cfg-googlesite-rule",
+                    "cfg-geosite_netflix-rule",
+                    "cfg-metacubex_geosite_netflix-rule"
+                ],
+                "outbound": [
+                    "block-out",
+                    "{all}"
+                ],
+                "server": "cfg-googledns-dns",
+                "rewrite_ttl": 60
+            },
+            {
+                "type": "logical",
+                "mode": "and",
+                "rules": [
+                    {
+                        "domain_suffix": [
+                            ".lan",
+                            ".localdomain",
+                            ".example",
+                            ".invalid",
+                            ".localhost",
+                            ".test",
+                            ".local",
+                            ".home.arpa",
+                            ".msftconnecttest.com",
+                            ".msftncsi.com",
+                            ".emex.top"
+                        ],
+                        "invert": true
+                    },
+                    {
+                        "query_type": [
+                            "A",
+                            "AAAA"
+                        ]
+                    },
+                    {
+                        "inbound": "tun"
+                    }
+                ],
+                "server": "fakeip-dns"
+            }
+        ],
+        "fakeip": {
+            "enabled": true,
+            "inet4_range": "198.18.0.1/16",
+            "inet6_range": "fc00::/18"
+        },
+        "disable_cache": false,
+        "disable_expire": false,
+        "independent_cache": true,
+        "final": "cfg-alidns-dns"
     },
     "experimental": {
         "cache_file": {
