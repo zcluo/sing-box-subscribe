@@ -71,13 +71,13 @@
                 "outbound": "dns-out"
             },
   {
-        "outbound": "bypass",
+        "outbound": "direct-out",
         "wifi_ssid": [
           "702"
         ]
       },
       {
-        "outbound": "bypass",
+        "outbound": "direct-out",
         "wifi_ssid": [
           "604"
         ]
