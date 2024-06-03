@@ -69,6 +69,18 @@
                 "protocol": "dns",
                 "outbound": "dns-out"
             },
+  {
+        "outbound": "bypass",
+        "wifi_ssid": [
+          "702"
+        ]
+      },
+      {
+        "outbound": "bypass",
+        "wifi_ssid": [
+          "604"
+        ]
+      },
             {
                 "rule_set": [
                     "cfg-geosite_category_ads_all-rule"
