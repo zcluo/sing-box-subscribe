@@ -314,6 +314,18 @@
             
         ],
         "rules": [
+  {
+        "outbound": "全球直连",
+        "wifi_ssid": [
+          "702"
+        ]
+      },
+      {
+        "outbound": "全球直连",
+        "wifi_ssid": [
+          "604"
+        ]
+      },
             {
                 "rule_set": "ADS",
                 "outbound": "全球拦截"
