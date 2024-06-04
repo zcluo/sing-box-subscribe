@@ -87,6 +87,17 @@
             "default": "dmit1-grpc"
         },
         {
+            "tag": "Porn",
+            "type": "selector",
+            "outbounds": [
+                "block",
+                "自动选择",
+                "全球直连",
+                "{all}"
+            ],
+            "default": "block"
+        },
+        {
             "tag": "漏网之鱼",
             "type": "selector",
             "outbounds": [
@@ -311,21 +322,20 @@
                 "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs",
                 "download_detour": "全球直连"
             }
-            
         ],
         "rules": [
-  {
-        "outbound": "全球直连",
-        "wifi_ssid": [
-          "702"
-        ]
-      },
-      {
-        "outbound": "全球直连",
-        "wifi_ssid": [
-          "604"
-        ]
-      },
+            {
+                "outbound": "全球直连",
+                "wifi_ssid": [
+                    "702"
+                ]
+            },
+            {
+                "outbound": "全球直连",
+                "wifi_ssid": [
+                    "604"
+                ]
+            },
             {
                 "rule_set": "ADS",
                 "outbound": "全球拦截"
@@ -336,7 +346,7 @@
             },
             {
                 "rule_set": "CATEGORY-PORN",
-                "outbound": "全球拦截"
+                "outbound": "Porn"
             },
             {
                 "rule_set": "AI@ALL",
@@ -383,7 +393,10 @@
                 "outbound": "Telegram"
             },
             {
-                "rule_set": ["GEOSITE-CN", "GEOIP-CN"],
+                "rule_set": [
+                    "GEOSITE-CN",
+                    "GEOIP-CN"
+                ],
                 "outbound": "全球直连"
             },
             {
@@ -442,7 +455,6 @@
                 "address": "1.1.1.1",
                 "detour": "节点选择"
             },
-            
             {
                 "tag": "block",
                 "address": "rcode://success"
@@ -451,10 +463,6 @@
         "rules": [
             {
                 "rule_set": "ADS",
-                "server": "block"
-            },
-            {
-                "rule_set": "CATEGORY-PORN",
                 "server": "block"
             },
             {
