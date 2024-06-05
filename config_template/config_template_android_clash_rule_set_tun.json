@@ -347,58 +347,142 @@
                 "outbound": "全球拦截"
             },
             {
+                "protocol": [
+                    "http",
+                    "tls",
+                    "quic",
+                    "stun"
+                ],
                 "rule_set": "OPENAI@ADS",
                 "outbound": "全球拦截"
             },
             {
+                "protocol": [
+                    "http",
+                    "tls",
+                    "quic",
+                    "stun"
+                ],
                 "rule_set": "CATEGORY-PORN",
                 "outbound": "Porn"
             },
             {
+                "protocol": [
+                    "http",
+                    "tls",
+                    "quic",
+                    "stun"
+                ],
                 "rule_set": "AI@ALL",
                 "outbound": "AI"
             },
             {
+                "protocol": [
+                    "http",
+                    "tls",
+                    "quic",
+                    "stun"
+                ],
                 "rule_set": "GEOSITE-GITHUB",
                 "outbound": "GitHub"
             },
             {
+                "protocol": [
+                    "http",
+                    "tls",
+                    "quic",
+                    "stun"
+                ],
                 "rule_set": "GEOSITE-MICROSOFT",
                 "outbound": "Microsoft"
             },
             {
+                "protocol": [
+                    "http",
+                    "tls",
+                    "quic",
+                    "stun"
+                ],
                 "rule_set": "GEOIP-GOOGLE",
                 "outbound": "Google"
             },
             {
+                "protocol": [
+                    "http",
+                    "tls",
+                    "quic",
+                    "stun"
+                ],
                 "rule_set": "GEOSITE-GOOGLE",
                 "outbound": "Google"
             },
             {
+                "protocol": [
+                    "http",
+                    "tls",
+                    "quic",
+                    "stun"
+                ],
                 "rule_set": "OPENAI",
                 "outbound": "AI"
             },
             {
+                "protocol": [
+                    "http",
+                    "tls",
+                    "quic",
+                    "stun"
+                ],
                 "rule_set": "GEOIP-NETFLIX",
                 "outbound": "Netflix"
             },
             {
+                "protocol": [
+                    "http",
+                    "tls",
+                    "quic",
+                    "stun"
+                ],
                 "rule_set": "GEOSITE-NETFLIX",
                 "outbound": "Netflix"
             },
             {
+                "protocol": [
+                    "http",
+                    "tls",
+                    "quic",
+                    "stun"
+                ],
                 "rule_set": "GEOSITE-YOUTUBE",
                 "outbound": "YouTube"
             },
             {
+                "protocol": [
+                    "http",
+                    "tls",
+                    "quic",
+                    "stun"
+                ],
                 "rule_set": "GEOIP-TELEGRAM",
                 "outbound": "Telegram"
             },
             {
+                "protocol": [
+                    "http",
+                    "tls",
+                    "quic",
+                    "stun"
+                ],
                 "rule_set": "GEOSITE-TELEGRAM",
                 "outbound": "Telegram"
             },
             {
+                "protocol": [
+                    "http",
+                    "tls",
+                    "quic",
+                    "stun"
+                ],
                 "rule_set": [
                     "GEOSITE-CN",
                     "GEOIP-CN"
@@ -424,14 +508,32 @@
                 "outbound": "节点选择"
             },
             {
+                "protocol": [
+                    "http",
+                    "tls",
+                    "quic",
+                    "stun"
+                ],
                 "ip_is_private": true,
                 "outbound": "全球直连"
             },
             {
+                "protocol": [
+                    "http",
+                    "tls",
+                    "quic",
+                    "stun"
+                ],
                 "rule_set": "GEOSITE-PRIVATE",
                 "outbound": "全球直连"
             },
             {
+                "protocol": [
+                    "http",
+                    "tls",
+                    "quic",
+                    "stun"
+                ],
                 "rule_set": "GEOLOCATION-!CN",
                 "outbound": "节点选择"
             }
