@@ -337,6 +337,12 @@
                 ]
             },
             {
+                "protocol": [
+                    "http",
+                    "tls",
+                    "quic",
+                    "stun"
+                ],
                 "rule_set": "ADS",
                 "outbound": "全球拦截"
             },
