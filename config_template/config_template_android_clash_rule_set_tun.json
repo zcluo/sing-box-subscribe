@@ -570,27 +570,69 @@
         ],
         "rules": [
             {
+                "protocol": [
+                    "http",
+                    "tls",
+                    "quic",
+                    "dns",
+                    "stun"
+                ],
                 "rule_set": "ADS",
                 "server": "block"
             },
             {
+                "protocol": [
+                    "http",
+                    "tls",
+                    "quic",
+                    "dns",
+                    "stun"
+                ],
                 "outbound": "any",
                 "disable_cache": true,
                 "server": "local-dns"
             },
             {
+                "protocol": [
+                    "http",
+                    "tls",
+                    "quic",
+                    "dns",
+                    "stun"
+                ],
                 "clash_mode": "direct",
                 "server": "local-dns"
             },
             {
+                "protocol": [
+                    "http",
+                    "tls",
+                    "quic",
+                    "dns",
+                    "stun"
+                ],
                 "clash_mode": "global",
                 "server": "remote-dns"
             },
             {
+                "protocol": [
+                    "http",
+                    "tls",
+                    "quic",
+                    "dns",
+                    "stun"
+                ],
                 "rule_set": "GEOSITE-CN",
                 "server": "local-dns"
             },
             {
+                "protocol": [
+                    "http",
+                    "tls",
+                    "quic",
+                    "dns",
+                    "stun"
+                ],
                 "rule_set": "GEOLOCATION-!CN",
                 "server": "remote-dns"
             }
