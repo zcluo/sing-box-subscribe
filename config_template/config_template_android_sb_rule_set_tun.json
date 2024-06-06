@@ -82,60 +82,30 @@
                 ]
             },
             {
-                "protocol": [
-                    "http",
-                    "tls",
-                    "quic",
-                    "stun"
-                ],
                 "rule_set": [
                     "cfg-geosite_category_ads_all-rule"
                 ],
                 "outbound": "block-out"
             },
             {
-                "protocol": [
-                    "http",
-                    "tls",
-                    "quic",
-                    "stun"
-                ],
                 "rule_set": [
                     "cfg-category_porn-rule"
                 ],
                 "outbound": "block-out"
             },
             {
-                "protocol": [
-                    "http",
-                    "tls",
-                    "quic",
-                    "stun"
-                ],
                 "domain_suffix": [
                     "annas-archive.gs"
                 ],
                 "outbound": "dmit1-grpc"
             },
             {
-                "protocol": [
-                    "http",
-                    "tls",
-                    "quic",
-                    "stun"
-                ],
                 "rule_set": [
                     "cfg-microsoft-rule"
                 ],
                 "outbound": "direct-out"
             },
             {
-                "protocol": [
-                    "http",
-                    "tls",
-                    "quic",
-                    "stun"
-                ],
                 "rule_set": [
                     "cfg-telegramip-rule",
                     "cfg-telegramsite-rule"
@@ -143,12 +113,6 @@
                 "outbound": "bwh3-grpc"
             },
             {
-                "protocol": [
-                    "http",
-                    "tls",
-                    "quic",
-                    "stun"
-                ],
                 "rule_set": [
                     "cfg-geosite_netflix-rule",
                     "cfg-metacubex_geoip_netflix-rule",
@@ -157,36 +121,18 @@
                 "outbound": "mk-grpc"
             },
             {
-                "protocol": [
-                    "http",
-                    "tls",
-                    "quic",
-                    "stun"
-                ],
                 "rule_set": [
                     "cfg-ai-rule"
                 ],
                 "outbound": "bwh3-grpc"
             },
             {
-                "protocol": [
-                    "http",
-                    "tls",
-                    "quic",
-                    "stun"
-                ],
                 "rule_set": [
                     "cfg-youtube-rule"
                 ],
                 "outbound": "dmit1-grpc"
             },
             {
-                "protocol": [
-                    "http",
-                    "tls",
-                    "quic",
-                    "stun"
-                ],
                 "rule_set": [
                     "cfg-googlesite-rule",
                     "cfg-googleip-rule"
@@ -194,24 +140,12 @@
                 "outbound": "bwh3-grpc"
             },
             {
-                "protocol": [
-                    "http",
-                    "tls",
-                    "quic",
-                    "stun"
-                ],
                 "rule_set": [
                     "cfg-tiktok-rule"
                 ],
                 "outbound": "bwh3-grpc"
             },
             {
-                "protocol": [
-                    "http",
-                    "tls",
-                    "quic",
-                    "stun"
-                ],
                 "rule_set": [
                     "cfg-geosite_geolocation_notcn-rule"
                 ],
