@@ -102,6 +102,12 @@
             },
             {
                 "rule_set": [
+                    "cfg-metacubex_geosite_github-rule"
+                ],
+                "outbound": "dmit1-grpc"
+            },
+            {
+                "rule_set": [
                     "cfg-microsoft-rule"
                 ],
                 "outbound": "direct-out"
@@ -279,6 +285,13 @@
                 "format": "binary",
                 "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-porn.srs",
                 "download_detour": "bwh3-grpc"
+            },
+            {
+                "type": "remote",
+                "tag": "cfg-metacubex_geosite_github-rule",
+                "format": "binary",
+                "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/github.srs",
+                "download_detour": "bwh3-grpc"
             }
         ],
         "auto_detect_interface": true,
@@ -403,7 +416,8 @@
                     "cfg-microsoft-rule",
                     "cfg-googlesite-rule",
                     "cfg-geosite_netflix-rule",
-                    "cfg-metacubex_geosite_netflix-rule"
+                    "cfg-metacubex_geosite_netflix-rule",
+                    "cfg-metacubex_geosite_github-rule"
                 ],
                 "outbound": "any",
                 "server": "cfg-googledns-dns",
