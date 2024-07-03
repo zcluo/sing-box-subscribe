@@ -488,6 +488,18 @@
                 "server": "remote-dns"
             },
             {
+                "query_type": [
+                    "A",
+                    "AAAA"
+                ],
+                "rule_set": "GEOSITE-CN",
+                "server": "fakeip-dns"
+            },
+            {
+                "rule_set": "GEOSITE-CN",
+                "server": "local-dns"
+            },
+            {
                 "type": "logical",
                 "mode": "and",
                 "rules": [
@@ -508,20 +520,22 @@
                         "invert": true
                     },
                     {
-                        "query_type": [
-                            "A",
-                            "AAAA"
-                        ]
+                        "rule_set": "GEOLOCATION-!CN",
+                        "invert": true
                     },
                     {
-                        "inbound": "tun"
+                        "rule_set": "GEOIP-CN"
                     }
                 ],
-                "server": "fakeip-dns"
+                "server": "remote-dns",
+                "client_subnet": "114.114.114.114/24"
             },
             {
-                "rule_set": "GEOLOCATION-!CN",
-                "server": "remote-dns"
+                "query_type": [
+                    "A",
+                    "AAAA"
+                ],
+                "server": "fakeip-dns"
             }
         ],
         "fakeip": {
@@ -529,7 +543,6 @@
             "inet4_range": "198.18.0.1/16",
             "inet6_range": "fc00::/18"
         },
-        "final": "remote-dns",
         "independent_cache": true,
         "strategy": "prefer_ipv4"
     }
