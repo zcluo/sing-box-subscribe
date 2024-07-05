@@ -38,8 +38,7 @@
             ],
             "mtu": 9000,
             "auto_route": true,
-            "auto_redirect": true,
-            "route_exclude_address_set":["GEOIP-CN"],
+
             "strict_route": true,
             "endpoint_independent_nat": true,
             "stack": "system",
