@@ -297,7 +297,8 @@
             }
         ],
         "auto_detect_interface": true,
-        "final": "direct-out"
+        "final": "direct-out",
+        "override_android_vpn": true
     },
     "dns": {
         "servers": [
