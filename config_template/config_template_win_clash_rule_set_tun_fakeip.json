@@ -575,6 +575,7 @@
             "inet6_range": "fc00::/18"
         },
         "independent_cache": true,
-        "strategy": "prefer_ipv4"
+        "strategy": "prefer_ipv4",
+        "final": "fakeip-dns"
     }
 }
