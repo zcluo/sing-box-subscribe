@@ -99,7 +99,7 @@
             },
             {
                 "ip_is_private": true,
-                "outbound": "direct"
+                "outbound": "direct-out"
             },
             {
                 "type": "logical",
