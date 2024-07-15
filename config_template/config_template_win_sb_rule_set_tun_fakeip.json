@@ -109,7 +109,7 @@
                         "protocol": "stun"
                     }
                 ],
-                "outbound": "block"
+                "outbound": "block-out"
             },
             {
                 "inbound": "dns-in",
