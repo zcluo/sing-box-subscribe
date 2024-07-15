@@ -469,7 +469,7 @@
         "disable_cache": false,
         "disable_expire": false,
         "independent_cache": true,
-        "final": "fakeip-dns"
+        "final": "cfg-googledns-dns"
     },
     "experimental": {
         "cache_file": {
