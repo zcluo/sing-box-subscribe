@@ -576,6 +576,6 @@
         },
         "independent_cache": true,
         "strategy": "prefer_ipv4",
-        "final": "fakeip-dns"
+        "final": "remote-dns"
     }
 }
