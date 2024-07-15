@@ -369,13 +369,6 @@
         ],
         "rules": [
             {
-                "protocol": [
-                    "http",
-                    "tls",
-                    "quic",
-                    "dns",
-                    "stun"
-                ],
                 "rule_set": [
                     "cfg-geosite_category_ads_all-rule",
                     "cfg-category_porn-rule"
@@ -385,45 +378,14 @@
                 "rewrite_ttl": 60
             },
             {
-                "protocol": [
-                    "http",
-                    "tls",
-                    "quic",
-                    "dns",
-                    "stun"
-                ],
-                "rule_set": [
-                    "cfg-geosite_geolocation_cn-rule",
-                    "cfg-geosite_cn-rule"
-                ],
-                "outbound": [
-                    "direct-out",
-                    "block-out"
-                ],
-                "server": "cfg-alidns-dns",
-                "rewrite_ttl": 60
+                "outbound": "any",
+                "disable_cache": true,
+                "server": "cfg-alidns-dns"
             },
             {
-                "protocol": [
-                    "http",
-                    "tls",
-                    "quic",
-                    "dns",
-                    "stun"
-                ],
-                "rule_set": [
-                    "cfg-geosite_geolocation_notcn-rule",
-                    "cfg-telegramsite-rule",
-                    "cfg-youtube-rule",
-                    "cfg-tiktok-rule",
-                    "cfg-microsoft-rule",
-                    "cfg-googlesite-rule",
-                    "cfg-geosite_netflix-rule",
-                    "cfg-metacubex_geosite_netflix-rule",
-                    "cfg-metacubex_geosite_github-rule"
-                ],
+                "rule_set": "cfg-geosite_geolocation_cn-rule",
                 "outbound": "any",
-                "server": "cfg-googledns-dns",
+                "server": "cfg-alidns-dns",
                 "rewrite_ttl": 60
             },
             {
@@ -447,14 +409,20 @@
                         "invert": true
                     },
                     {
-                        "query_type": [
-                            "A",
-                            "AAAA"
-                        ]
+                        "rule_set": "cfg-geosite_geolocation_notcn-rule",
+                        "invert": true
                     },
                     {
-                        "inbound": "tun"
+                        "rule_set": "cfg-geoip_cn-rule"
                     }
+                ],
+                "server": "cfg-googledns-dns",
+                "client_subnet": "114.114.114.114/24"
+            },
+            {
+                "query_type": [
+                    "A",
+                    "AAAA"
                 ],
                 "server": "fakeip-dns"
             }
