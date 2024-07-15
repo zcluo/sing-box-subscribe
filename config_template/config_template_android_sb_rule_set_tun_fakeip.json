@@ -117,7 +117,7 @@
                         "protocol": "stun"
                     }
                 ],
-                "outbound": "block"
+                "outbound": "block-out"
             },
             {
                 "rule_set": [
