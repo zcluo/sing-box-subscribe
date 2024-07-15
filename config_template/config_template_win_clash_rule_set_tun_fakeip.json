@@ -525,17 +525,11 @@
                 "server": "remote-dns"
             },
             {
-                "query_type": [
-                    "A",
-                    "AAAA"
-                ],
-                "rule_set": "GEOSITE-CN",
-                "server": "fakeip-dns"
+                "clash_mode": "rule",
+                "server": "remote-dns"
             },
-            {
-                "rule_set": "GEOSITE-CN",
-                "server": "local-dns"
-            },
+            
+            
             {
                 "type": "logical",
                 "mode": "and",
@@ -564,7 +558,7 @@
                         "rule_set": "GEOIP-CN"
                     }
                 ],
-                "server": "remote-dns",
+                "server": "local-dns",
                 "client_subnet": "114.114.114.114/24"
             },
             {
