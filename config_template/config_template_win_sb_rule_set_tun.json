@@ -417,7 +417,7 @@
                     "cfg-geosite_geolocation_cn-rule"
                 ],
                 "outbound": "any",
-                "server": "cfg-alidns-dns",
+                "server": "cfg-dnspod-dns",
                 "rewrite_ttl": 60
             },
             {
@@ -432,14 +432,14 @@
                         "rule_set": "cfg-geoip_cn-rule"
                     }
                 ],
-                "server": "cfg-googledns-dns",
+                "server": "cfg-dnspod-dns",
                 "client_subnet": "114.114.114.114/24"
             }
         ],
         "disable_cache": false,
         "disable_expire": false,
         "independent_cache": true,
-        "final": "cfg-alidns-dns"
+        "final": "cfg-googledns-dns"
     },
     "experimental": {
         "cache_file": {
