@@ -450,7 +450,7 @@
                         "rule_set": "cfg-geoip_cn-rule"
                     }
                 ],
-                "server": "cfg-dnspod-dns",
+                "server": "cfg-googledns-dns",
                 "client_subnet": "114.114.114.114/24"
             },
             {
