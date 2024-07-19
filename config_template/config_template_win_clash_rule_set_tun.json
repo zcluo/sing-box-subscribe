@@ -13,7 +13,7 @@
             "default_mode": "Enhanced"
         },
         "cache_file": {
-            "enabled": false,
+            "enabled": true,
             "store_fakeip": false
         }
     },
