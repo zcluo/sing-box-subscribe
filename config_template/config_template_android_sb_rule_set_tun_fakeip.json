@@ -263,7 +263,7 @@
                 "type": "remote",
                 "tag": "cfg-telegramsite-rule",
                 "format": "binary",
-                "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/telegram.srs",
+                "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/telegram.srs",
                 "download_detour": "bwh3-grpc"
             },
             {
@@ -305,28 +305,28 @@
                 "type": "remote",
                 "tag": "cfg-geosite_netflix-rule",
                 "format": "binary",
-                "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-netflix.srs",
+                "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-netflix.srs",
                 "download_detour": "bwh3-grpc"
             },
             {
                 "type": "remote",
                 "tag": "cfg-metacubex_geoip_netflix-rule",
                 "format": "binary",
-                "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/netflix.srs",
+                "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/netflix.srs",
                 "download_detour": "bwh3-grpc"
             },
             {
                 "type": "remote",
                 "tag": "cfg-metacubex_geosite_netflix-rule",
                 "format": "binary",
-                "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/netflix.srs",
+                "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/netflix.srs",
                 "download_detour": "bwh3-grpc"
             },
             {
                 "type": "remote",
                 "tag": "cfg-category_porn-rule",
                 "format": "binary",
-                "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-porn.srs",
+                "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-porn.srs",
                 "download_detour": "bwh3-grpc"
             },
             {
@@ -340,7 +340,7 @@
                 "type": "remote",
                 "tag": "cfg-metacubex_geosite_github-rule",
                 "format": "binary",
-                "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/github.srs",
+                "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/github.srs",
                 "download_detour": "bwh3-grpc"
             }
         ],
