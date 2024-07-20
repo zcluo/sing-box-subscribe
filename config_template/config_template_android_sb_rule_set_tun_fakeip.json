@@ -145,6 +145,12 @@
             },
             {
                 "rule_set": [
+                    "cfg-metacubex_geosite_instagram-rule"
+                ],
+                "outbound": "dmit1-grpc"
+            },
+            {
+                "rule_set": [
                     "cfg-microsoft-rule"
                 ],
                 "outbound": "direct-out"
@@ -321,6 +327,13 @@
                 "tag": "cfg-category_porn-rule",
                 "format": "binary",
                 "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-porn.srs",
+                "download_detour": "bwh3-grpc"
+            },
+            {
+                "tag": "cfg-metacubex_geosite_instagram-rule",
+                "type": "remote",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/instagram.srs",
                 "download_detour": "bwh3-grpc"
             },
             {
