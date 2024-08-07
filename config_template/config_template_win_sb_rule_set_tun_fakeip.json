@@ -439,22 +439,7 @@
                 "type": "logical",
                 "mode": "and",
                 "rules": [
-                    {
-                        "domain_suffix": [
-                            ".lan",
-                            ".localdomain",
-                            ".example",
-                            ".invalid",
-                            ".localhost",
-                            ".test",
-                            ".local",
-                            ".home.arpa",
-                            ".msftconnecttest.com",
-                            ".msftncsi.com",
-                            ".emex.top"
-                        ],
-                        "invert": true
-                    },
+                    
                     {
                         "rule_set": "cfg-geosite_geolocation_notcn-rule",
                         "invert": true
