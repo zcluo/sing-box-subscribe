@@ -169,7 +169,7 @@
         "direct",
         "{all}"
       ],
-      "default": "dmit2-tcp"
+      "default": "dmit1-tcp"
     },
     {
       "tag": "OpenAI",
@@ -324,7 +324,7 @@
       ]
     },
     {
-      "tag": "Global",
+      "tag": "Compiler",
       "type": "selector",
       "outbounds": [
         "Proxy",
@@ -333,6 +333,17 @@
         "{all}"
       ],
       "default": "dmit2-tcp"
+    },
+    {
+      "tag": "Global",
+      "type": "selector",
+      "outbounds": [
+        "Proxy",
+        "auto",
+        "direct",
+        "{all}"
+      ],
+      "default": "dmit1-tcp"
     },
     {
       "tag": "China",
@@ -390,6 +401,18 @@
           }
         ],
         "action": "hijack-dns"
+      },
+      {
+        "protocol": "bittorrent",
+        "action": "route",
+        "udp_connect": true,
+        "outbound": "direct"
+      },
+      {
+        "source_ip_cidr": "10.0.0.128/32",
+        "action": "route",
+        "udp_connect": true,
+        "outbound": "Compiler"
       },
       {
         "rule_set": "geosite-category-ads-all",
