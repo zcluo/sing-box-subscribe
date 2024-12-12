@@ -68,14 +68,6 @@
         "server": "local"
       },
       {
-        "query_type": [
-          "A",
-          "AAAA"
-        ],
-        "rule_set": "geosite-geolocation-!cn",        
-        "server": "fakeip"
-      },
-      {
         "type": "logical",
         "mode": "and",
         "rules": [
@@ -98,6 +90,7 @@
         "server": "fakeip"
       }
     ],
+    "final": "remote-dns",
     "independent_cache": true,
     "strategy": "prefer_ipv4"
   },
