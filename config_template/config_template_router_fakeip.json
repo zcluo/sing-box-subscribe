@@ -145,7 +145,7 @@
       ],
       "route_address_set": [],
       "route_exclude_address_set": [
-        "GEOIP-CN"
+        "geoip-cn"
       ],
       "route_exclude_address": [],
       "include_interface": [
