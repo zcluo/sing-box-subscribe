@@ -37,7 +37,8 @@
     "servers": [
       {
         "tag": "google",
-        "address": "tls://8.8.8.8"
+        "address": "tls://8.8.8.8",
+        "detour": "auto"
       },
       {
         "tag": "local",
@@ -63,16 +64,16 @@
         "server": "google"
       },
       {
+        "rule_set": "geosite-cn",
+        "server": "local"
+      },
+      {
         "query_type": [
           "A",
           "AAAA"
         ],
         "rule_set": "geosite-geolocation-!cn",        
         "server": "fakeip"
-      },
-      {
-        "rule_set": "geosite-cn",
-        "server": "local"
       },
       {
         "type": "logical",
