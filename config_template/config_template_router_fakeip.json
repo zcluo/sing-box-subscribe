@@ -30,7 +30,7 @@
   },
   "dns": {
     "fakeip": {
-      "enabled": true,
+      "enabled": false,
       "inet4_range": "198.18.0.0/15",
       "inet6_range": "fc00::/18"
     },
@@ -62,14 +62,7 @@
         "clash_mode": "global",
         "server": "google"
       },
-      {
-        "query_type": [
-          "A",
-          "AAAA"
-        ],
-        "rule_set": "geosite-cn",
-        "server": "fakeip"
-      },
+      
       {
         "rule_set": "geosite-cn",
         "server": "local"
@@ -94,7 +87,7 @@
           "A",
           "AAAA"
         ],
-        "server": "fakeip"
+        "server": "google"
       }
     ],
     "independent_cache": true,
