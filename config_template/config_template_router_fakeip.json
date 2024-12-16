@@ -418,6 +418,29 @@
         "outbound": "Compiler"
       },
       {
+        "port_range": [
+          "22:22",
+          "53:53",
+          "80:80",
+          "123:123",
+          "143:143",
+          "443:443",
+          "465:465",
+          "853:853",
+          "873:873",
+          "993:993",
+          "995:995",
+          "5228:5228",
+          "8080:8080",
+          "8443:8443",
+          "9418:9418"
+        ],
+        "invert": true,
+        "action": "route",
+        "udp_connect": true,
+        "outbound": "direct"
+      },
+      {
         "rule_set": "geosite-category-ads-all",
         "clash_mode": "rule",
         "action": "reject"
