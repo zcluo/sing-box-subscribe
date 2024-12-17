@@ -59,6 +59,15 @@
         "server": "dns_resolver"
       },
       {
+            "domain": [
+              "emex.top",
+              "nb.emex.top",
+              "dt.emex.top",
+              "www.emex.top"
+        ],
+        "server": "dns_direct"
+      },
+      {
         "rule_set": "geosite-geolocation-!cn",
         "query_type": [
           "A",
