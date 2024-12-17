@@ -370,6 +370,17 @@
         "outbound": "Proxy"
       },
       {
+        "domain": [
+              "emex.top",
+              "nb.emex.top",
+              "dt.emex.top",
+              "www.emex.top"
+        ],
+        "action": "route",
+        "udp_connect": true,
+        "outbound": "direct"
+      },
+      {
         "clash_mode": "direct",
         "outbound": "direct"
       },
