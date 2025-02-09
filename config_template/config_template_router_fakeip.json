@@ -269,7 +269,7 @@
         "direct",
         "{all}"
       ],
-      "default": "mk-tcp"
+      "default": "bwh3-tcp"
     },
     {
       "tag": "Disney+",
