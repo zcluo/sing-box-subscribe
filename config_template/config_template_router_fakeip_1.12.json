@@ -51,13 +51,6 @@
     ],
     "rules": [
       {
-        "outbound": "any",
-        "action": "route",
-        "server": "local",
-        "disable_cache": false,
-        "rewrite_ttl": 1
-      },
-      {
         "clash_mode": "direct",
         "server": "local"
       },
