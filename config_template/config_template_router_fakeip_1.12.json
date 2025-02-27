@@ -51,20 +51,19 @@
     ],
     "rules": [
       {
+        "outbound": "any",
+        "action": "route",
+        "server": "local",
+        "disable_cache": false,
+        "rewrite_ttl": 1
+      },
+      {
         "clash_mode": "direct",
         "server": "local"
       },
       {
         "clash_mode": "global",
         "server": "google"
-      },
-      {
-        "query_type": [
-          "A",
-          "AAAA"
-        ],
-        "rule_set": "geosite-cn",
-        "server": "fakeip"
       },
       {
         "rule_set": "geosite-cn",
