@@ -126,26 +126,20 @@
     {
       "tag": "tun-in",
       "type": "tun",
-      "interface_name": "singbox",
       "address": [
-        "172.19.0.1/30",
-        "fdfe:dcba:9876::1/126"
+        "172.19.0.0/30",
+        "fdfe:dcba:9876::0/126"
       ],
-      "mtu": 9000,
+      "stack": "system",
       "auto_route": true,
       "strict_route": true,
-      "endpoint_independent_nat": false,
-      "stack": "system",
       "platform": {
         "http_proxy": {
           "enabled": false,
           "server": "127.0.0.1",
           "server_port": 2334
         }
-      },
-      "sniff": true,
-      "sniff_override_destination": true,
-      "domain_strategy": "prefer_ipv4"
+      }
     }
   ],
   "outbounds": [
