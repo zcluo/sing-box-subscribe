@@ -5,7 +5,7 @@
   },
   "experimental": {
     "clash_api": {
-      "external_controller": "127.0.0.1:19090",
+      "external_controller": ":19090",
       "external_ui": "ui",
       "secret": "",
       "external_ui_download_url": "https://gh-proxy.com/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
@@ -17,6 +17,16 @@
       "store_fakeip": true,
       "store_rdrc": true
     }
+  },
+  "ntp": {
+    "enabled": true,
+    "server": "ntp.aliyun.com",
+    "server_port": 123,
+    "interval": "30m",
+    "detour": "direct",
+    "connect_timeout": "10s",
+    "domain_strategy": "prefer_ipv4",
+    "fallback_delay": "300ms"
   },
   "dns": {
     "servers": [
