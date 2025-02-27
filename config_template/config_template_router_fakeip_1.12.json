@@ -80,6 +80,7 @@
       }
       
     ],
+    "final": "google",
     "independent_cache": true,
     "strategy": "prefer_ipv4"
   },
