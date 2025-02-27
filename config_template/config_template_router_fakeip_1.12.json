@@ -5,7 +5,7 @@
   },
   "experimental": {
     "clash_api": {
-      "external_controller": "127.0.0.1:9090",
+      "external_controller": "127.0.0.1:19090",
       "external_ui": "ui",
       "secret": "",
       "external_ui_download_url": "https://gh-proxy.com/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
@@ -329,6 +329,17 @@
       "default": "auto"
     },
     {
+      "type": "selector",
+      "tag": "Compiler",
+      "outbounds": [
+        "Proxy",
+        "auto",
+        "direct",
+        "{all}"
+      ],
+      "default": "dmit-tcp"
+    },
+    {
       "tag": "Global",
       "type": "selector",
       "outbounds": [
@@ -417,6 +428,41 @@
           "yacd.haishan.me",
           "d.metacubex.one"
         ],
+        "outbound": "direct"
+      },
+      {
+        "protocol": "bittorrent",
+        "action": "route",
+        "udp_connect": true,
+        "outbound": "direct"
+      },
+      {
+        "source_ip_cidr": "10.0.0.128/32",
+        "action": "route",
+        "udp_connect": true,
+        "outbound": "Compiler"
+      },
+      {
+        "port_range": [
+          "22:22",
+          "53:53",
+          "80:80",
+          "123:123",
+          "143:143",
+          "443:443",
+          "465:465",
+          "853:853",
+          "873:873",
+          "993:993",
+          "995:995",
+          "5228:5228",
+          "8080:8080",
+          "8443:8443",
+          "9418:9418"
+        ],
+        "invert": true,
+        "action": "route",
+        "udp_connect": true,
         "outbound": "direct"
       },
       {
