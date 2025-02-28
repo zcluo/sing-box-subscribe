@@ -26,10 +26,9 @@
         "detour": "auto"
       },
       {
-        "tag": "local",
-        "type": "tcp",
-        "server": "81.68.238.207",
-	"server_port": 22253,
+        "tag": "local-dns",
+        "address": "https://223.5.5.5/dns-query",
+        "strategy": "prefer_ipv4",
         "detour": "direct"
       },
       {
