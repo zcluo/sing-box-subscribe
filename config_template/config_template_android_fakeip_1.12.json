@@ -38,8 +38,9 @@
       },
       {
         "tag": "local",
-        "type": "https",
-        "server": "223.5.5.5",
+        "type": "tcp",
+        "server": "81.68.238.207",
+	      "server_port": 22253,
         "detour": "direct"
       },
       {
