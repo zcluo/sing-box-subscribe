@@ -40,7 +40,7 @@
         "tag": "local",
         "type": "tcp",
         "server": "81.68.238.207",
-	      "server_port": 22253,
+	"server_port": 22253,
         "detour": "direct"
       },
       {
