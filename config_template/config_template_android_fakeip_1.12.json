@@ -39,6 +39,7 @@
         "tag": "local",
         "type": "https",
         "server": "doh.pub",
+	"domain_resolver": "223.5.5.5",
 	"server_port": 443
       },
       {
