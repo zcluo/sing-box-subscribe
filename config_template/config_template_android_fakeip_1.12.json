@@ -37,8 +37,8 @@
       },
       {
         "tag": "local",
-        "type": "https",
-        "server": "doh.pub",
+        "type": "tls",
+        "server": "sh.telex.app",
 	"domain_resolver": "dns-resolver-aliyun",
 	"server_port": 443
       },
@@ -348,7 +348,7 @@
   ],
   "route": {
     "default_domain_resolver": {
-      "server": "local"
+      "server": "dns-resolver-aliyun"
     },
     "auto_detect_interface": true,
     "final": "Proxy",
