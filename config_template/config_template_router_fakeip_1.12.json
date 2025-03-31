@@ -39,8 +39,8 @@
         "tag": "local",
         "type": "tls",
         "server": "sh.telex.app",
-	"domain_resolver": "dns-resolver-aliyun",
-	"server_port": 853
+        "domain_resolver": "dns-resolver-aliyun",
+        "server_port": 853
       },
       {
         "type": "udp",
@@ -63,7 +63,6 @@
         "clash_mode": "global",
         "server": "google"
       },
-      
       {
         "rule_set": "geosite-cn",
         "server": "local"
@@ -83,7 +82,6 @@
         "server": "google",
         "client_subnet": "114.114.114.114"
       }
-      
     ],
     "final": "google",
     "independent_cache": true,
