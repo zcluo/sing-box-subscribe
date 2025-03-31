@@ -37,9 +37,15 @@
       },
       {
         "tag": "local",
-        "type": "tcp",
-        "server": "81.68.238.207",
-	"server_port": 22253
+        "type": "tls",
+        "server": "sh.telex.app",
+	"domain_resolver": "dns-resolver-aliyun",
+	"server_port": 853
+      },
+      {
+        "type": "udp",
+        "tag": "dns-resolver-aliyun",
+        "server": "223.5.5.5"
       },
       {
         "tag": "fakeip",
