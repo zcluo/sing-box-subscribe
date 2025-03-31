@@ -40,7 +40,7 @@
         "type": "tls",
         "server": "sh.telex.app",
 	"domain_resolver": "dns-resolver-aliyun",
-	"server_port": 443
+	"server_port": 853
       },
       {
         "type": "udp",
