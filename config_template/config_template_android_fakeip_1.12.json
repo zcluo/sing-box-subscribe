@@ -39,8 +39,13 @@
         "tag": "local",
         "type": "https",
         "server": "doh.pub",
-	"domain_resolver": "223.5.5.5",
+	"domain_resolver": "dns-resolver-aliyun",
 	"server_port": 443
+      },
+      {
+        "type": "udp",
+        "tag": "dns-resolver-aliyun",
+        "server": "223.5.5.5"
       },
       {
         "tag": "fakeip",
