@@ -30,8 +30,8 @@
         "tag": "local",
         "type": "tls",
         "server": "dot.pub",
-	"domain_resolver": "dns-resolver-aliyun",
-	"server_port": 853
+        "domain_resolver": "dns-resolver-aliyun",
+        "server_port": 853
       },
       {
         "type": "udp",
@@ -51,7 +51,7 @@
         "server": "local"
       },
       {
-        "clash_mode": "global",
+        "clash_mode": "Global",
         "server": "google"
       },
       {
@@ -383,7 +383,7 @@
       },
       {
         "rule_set": "geosite-category-ads-all",
-        "clash_mode": "global",
+        "clash_mode": "Global",
         "outbound": "Proxy"
       },
       {
@@ -391,7 +391,7 @@
         "outbound": "direct"
       },
       {
-        "clash_mode": "global",
+        "clash_mode": "Global",
         "outbound": "Proxy"
       },
       {
