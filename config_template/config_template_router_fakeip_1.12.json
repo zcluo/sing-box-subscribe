@@ -18,14 +18,6 @@
       "store_rdrc": true
     }
   },
-  "ntp": {
-    "enabled": false,
-    "server": "ntp.aliyun.com",
-    "server_port": 123,
-    "interval": "30m",
-    "connect_timeout": "5s",
-    "fallback_delay": "300ms"
-  },
   "dns": {
     "servers": [
       {
