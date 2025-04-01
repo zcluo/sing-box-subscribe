@@ -1,6 +1,7 @@
 {
   "log": {
     "level": "error",
+    "output": "/tmp/log/sing-box.log",
     "timestamp": true
   },
   "experimental": {
