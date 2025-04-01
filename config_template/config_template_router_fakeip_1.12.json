@@ -90,6 +90,12 @@
       "tag": "mixed-in",
       "listen": "::",
       "listen_port": 2334,
+      "users": [
+        {
+          "username": "mix",
+          "password": "1234567890"
+        }
+      ],
       "tcp_fast_open": true,
       "tcp_multi_path": true,
       "udp_fragment": true,
@@ -102,6 +108,12 @@
       "tag": "mixed1-in",
       "listen": "::",
       "listen_port": 2336,
+      "users": [
+        {
+          "username": "mix",
+          "password": "1234567890"
+        }
+      ],
       "tcp_fast_open": true,
       "tcp_multi_path": true,
       "udp_fragment": true,
