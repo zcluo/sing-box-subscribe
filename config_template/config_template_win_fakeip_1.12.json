@@ -24,14 +24,13 @@
         "tag": "google",
         "type": "tls",
         "server": "8.8.8.8",
-        "detour": "auto"
+        "detour": "Proxy"
       },
       {
         "tag": "local",
         "type": "tls",
         "server": "dot.pub",
-        "domain_resolver": "dns-resolver-aliyun",
-        "server_port": 853
+        "domain_resolver": "dns-resolver-aliyun"
       },
       {
         "type": "udp",
@@ -47,7 +46,7 @@
     ],
     "rules": [
       {
-        "clash_mode": "direct",
+        "clash_mode": "Direct",
         "server": "local"
       },
       {
@@ -387,7 +386,7 @@
         "outbound": "Proxy"
       },
       {
-        "clash_mode": "direct",
+        "clash_mode": "Direct",
         "outbound": "direct"
       },
       {
