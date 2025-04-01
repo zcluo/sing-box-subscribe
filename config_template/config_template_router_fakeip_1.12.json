@@ -29,9 +29,8 @@
       },
       {
         "tag": "local",
-        "type": "tls",
-        "server": "dot.pub",
-        "domain_resolver": "dns-resolver-aliyun"
+        "type": "udp",
+        "server": "119.29.29.29"
       },
       {
         "type": "udp",
