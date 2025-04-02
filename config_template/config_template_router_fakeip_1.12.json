@@ -403,7 +403,7 @@
   ],
   "route": {
     "default_domain_resolver": {
-      "server": "dns-resolver-aliyun"
+      "server": "local"
     },
     "auto_detect_interface": true,
     "final": "Proxy",
