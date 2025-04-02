@@ -9,7 +9,7 @@
       "external_ui": "ui",
       "secret": "",
       "external_ui_download_url": "https://gh-proxy.com/https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip",
-      "external_ui_download_detour": "direct",
+      "external_ui_download_detour": "China",
       "default_mode": "Rule"
     },
     "cache_file": {
@@ -30,12 +30,14 @@
         "tag": "local",
         "type": "tls",
         "server": "dot.pub",
-        "domain_resolver": "dns-resolver-aliyun"
+        "domain_resolver": "dns-resolver-aliyun",
+        "detour": "China"
       },
       {
         "type": "udp",
         "tag": "dns-resolver-aliyun",
-        "server": "223.5.5.5"
+        "server": "223.5.5.5",
+        "detour": "China"
       },
       {
         "tag": "fakeip",
