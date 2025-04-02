@@ -124,7 +124,7 @@
       "default": "dmit1-tcp"
     },
     {
-      "tag": "OpenAI",
+      "tag": "AI",
       "type": "selector",
       "outbounds": [
         "Proxy",
@@ -430,8 +430,11 @@
         "outbound": "direct"
       },
       {
-        "rule_set": "geosite-openai",
-        "outbound": "OpenAI"
+        "rule_set": [
+          "geosite-ai", 
+          "geoip-ai"
+        ],
+        "outbound": "AI"
       },
       {
         "rule_set": [
@@ -538,10 +541,18 @@
         "update_interval": "3d"
       },
       {
-        "tag": "geosite-openai",
+        "tag": "geosite-ai",
         "type": "remote",
         "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/Toperlock/sing-box-geosite@main/rule/OpenAI.srs",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ai-!cn.srs",
+        "download_detour": "direct",
+        "update_interval": "3d"
+      },
+      {
+        "tag": "geoip-ai",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/ai.srs",
         "download_detour": "direct",
         "update_interval": "3d"
       },
