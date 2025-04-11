@@ -34,6 +34,22 @@
         "detour": "China"
       },
       {
+        "tag": "sh",
+        "type": "tls",
+        "server": "sh.telex.app",
+        "server_port": 853,
+        "domain_resolver": "dns-resolver-aliyun",
+        "detour": "China"
+      },
+      {
+        "tag": "alihk",
+        "type": "tls",
+        "server": "alihk.telex.app",
+        "server_port": 853,
+        "domain_resolver": "dns-resolver-aliyun",
+        "detour": "China"
+      },
+      {
         "type": "udp",
         "tag": "dns-resolver-aliyun",
         "server": "223.5.5.5",
@@ -49,15 +65,15 @@
     "rules": [
       {
         "clash_mode": "Direct",
-        "server": "local"
+        "server": "sh"
       },
       {
         "clash_mode": "Global",
-        "server": "google"
+        "server": "alihk"
       },
       {
         "rule_set": "geosite-cn",
-        "server": "local"
+        "server": "sh"
       },
       {
         "type": "logical",
@@ -71,11 +87,11 @@
             "rule_set": "geoip-cn"
           }
         ],
-        "server": "google",
+        "server": "alihk",
         "client_subnet": "114.114.114.114"
       }
     ],
-    "final": "google",
+    "final": "alihk",
     "independent_cache": true,
     "strategy": "prefer_ipv4"
   },
