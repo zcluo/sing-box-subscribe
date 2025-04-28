@@ -30,6 +30,7 @@
         "tag": "local",
         "type": "tls",
         "server": "dot.pub",
+        "server_port": 853,
         "domain_resolver": "dns-resolver-aliyun",
         "detour": "China"
       },
