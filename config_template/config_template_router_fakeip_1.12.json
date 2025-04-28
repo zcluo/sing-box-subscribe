@@ -24,6 +24,7 @@
         "tag": "google",
         "type": "tls",
         "server": "8.8.8.8",
+        "server_port": 853,
         "detour": "Proxy"
       },
       {
