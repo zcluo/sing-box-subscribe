@@ -24,12 +24,14 @@
         "tag": "google",
         "type": "tls",
         "server": "8.8.8.8",
+        "server_port": 853,
         "detour": "Proxy"
       },
       {
         "tag": "local",
         "type": "tls",
         "server": "dot.pub",
+        "server_port": 853,
         "domain_resolver": "dns-resolver-aliyun",
         "detour": "China"
       },
