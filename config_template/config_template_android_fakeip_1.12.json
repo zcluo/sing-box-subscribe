@@ -172,7 +172,7 @@
         "direct",
         "{all}"
       ],
-      "default": "auto"
+      "default": "bwh3-tcp"
     },
     {
       "tag": "Twitter",
@@ -238,7 +238,7 @@
         "direct",
         "{all}"
       ],
-      "default": "Proxy"
+      "default": "bwh3-tcp"
     },
     {
       "tag": "Netflix",
