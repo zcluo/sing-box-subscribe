@@ -231,6 +231,17 @@
       "default": "Proxy"
     },
     {
+      "tag": "Github",
+      "type": "selector",
+      "outbounds": [
+        "Proxy",
+        "auto",
+        "direct",
+        "{all}"
+      ],
+      "default": "Proxy"
+    },
+    {
       "tag": "Telegram",
       "type": "selector",
       "outbounds": [
@@ -518,7 +529,7 @@
       },
       {
         "rule_set": [
-          "geosite-ai", 
+          "geosite-ai",
           "geoip-ai"
         ],
         "outbound": "AI"
@@ -527,10 +538,15 @@
         "rule_set": [
           "geosite-youtube",
           "geoip-google",
-          "geosite-google",
-          "geosite-github"
+          "geosite-google"
         ],
         "outbound": "Google"
+      },
+      {
+        "rule_set": [
+          "geosite-github"
+        ],
+        "outbound": "Github"
       },
       {
         "rule_set": [
@@ -583,10 +599,15 @@
       {
         "rule_set": [
           "geoip-apple",
-          "geosite-apple",
-          "geosite-amazon"
+          "geosite-apple"
         ],
         "outbound": "Apple"
+      },
+      {
+        "rule_set": [
+          "geosite-amazon"
+        ],
+        "outbound": "Proxy"
       },
       {
         "rule_set": "geosite-microsoft",
@@ -594,15 +615,15 @@
       },
       {
         "rule_set": [
-          "geosite-category-games",
-          "geosite-dmm"
+          "geosite-category-games"
         ],
         "outbound": "Games"
       },
       {
         "rule_set": [
           "geosite-hbo",
-          "geosite-primevideo"
+          "geosite-primevideo",
+          "geosite-dmm"
         ],
         "outbound": "Streaming"
       },
