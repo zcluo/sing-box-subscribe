@@ -21,6 +21,11 @@
   "dns": {
     "servers": [
       {
+        "type": "resolved",
+        "service": "resolved",
+        "accept_default_resolvers": true
+      },
+      {
         "tag": "google",
         "type": "tls",
         "server": "8.8.8.8",
@@ -153,6 +158,17 @@
     },
     {
       "tag": "Google",
+      "type": "selector",
+      "outbounds": [
+        "Proxy",
+        "auto",
+        "direct",
+        "{all}"
+      ],
+      "default": "Proxy"
+    },
+    {
+      "tag": "Github",
       "type": "selector",
       "outbounds": [
         "Proxy",
@@ -457,10 +473,15 @@
         "rule_set": [
           "geosite-youtube",
           "geoip-google",
-          "geosite-google",
-          "geosite-github"
+          "geosite-google"
         ],
         "outbound": "Google"
+      },
+      {
+        "rule_set": [
+          "geosite-github"
+        ],
+        "outbound": "Github"
       },
       {
         "rule_set": [
@@ -513,10 +534,15 @@
       {
         "rule_set": [
           "geoip-apple",
-          "geosite-apple",
-          "geosite-amazon"
+          "geosite-apple"
         ],
         "outbound": "Apple"
+      },
+      {
+        "rule_set": [
+          "geosite-amazon"
+        ],
+        "outbound": "Proxy"
       },
       {
         "rule_set": "geosite-microsoft",
@@ -524,15 +550,15 @@
       },
       {
         "rule_set": [
-          "geosite-category-games",
-          "geosite-dmm"
+          "geosite-category-games"
         ],
         "outbound": "Games"
       },
       {
         "rule_set": [
           "geosite-hbo",
-          "geosite-primevideo"
+          "geosite-primevideo",
+          "geosite-dmm"
         ],
         "outbound": "Streaming"
       },
