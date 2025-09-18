@@ -18,20 +18,8 @@
       "store_rdrc": true
     }
   },
-  "services": [
-    {
-      "type": "resolved",
-      "tag": "resolved",
-      "listen_port":5353
-    }
-  ],
   "dns": {
     "servers": [
-      {
-        "type": "resolved",
-        "service": "resolved",
-        "accept_default_resolvers": true
-      },
       {
         "tag": "google",
         "type": "tls",
