@@ -166,6 +166,9 @@
       "auto_redirect": true,
       "auto_redirect_input_mark": "0x2023",
       "auto_redirect_output_mark": "0x2024",
+      "loopback_address": [
+        "10.7.0.1"
+      ],
       "strict_route": true,
       "platform": {
         "http_proxy": {
@@ -190,10 +193,8 @@
         "lo"
       ],
       "endpoint_independent_nat": false,
-      "udp_timeout": "5m",
-      "stack": "system",
-      "sniff": true,
-      "sniff_override_destination": true,
+      "udp_timeout": "1m",
+      "stack": "mixed",
       "domain_strategy": "prefer_ipv4"
     }
   ],
