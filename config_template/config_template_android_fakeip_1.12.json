@@ -71,7 +71,11 @@
       },
       {
         "clash_mode": "Global",
-        "server": "google"
+        "server": "local"
+      },
+      {
+        "domain_regex": ["emex.top"],
+        "server": "dns-resolver-aliyun"
       },
       {
         "rule_set": "geosite-cn",
