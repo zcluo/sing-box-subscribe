@@ -419,10 +419,6 @@
         "outbound": "direct"
       },
       {
-        "domain_regex": ["emex.top"],
-        "outbound": "direct"
-      },
-      {
         "protocol": "bittorrent",
         "action": "route",
         "udp_connect": true,
@@ -433,6 +429,10 @@
         "action": "route",
         "udp_connect": true,
         "outbound": "Compiler"
+      },
+      {
+        "domain_regex": ["emex.top"],
+        "outbound": "direct"
       },
       {
         "port_range": [
