@@ -433,6 +433,12 @@
         "outbound": "direct"
       },
       {
+        "domain_suffix": [
+          "emex.top"
+        ],
+        "outbound": "direct"
+      },
+      {
         "protocol": "bittorrent",
         "action": "route",
         "udp_connect": true,
