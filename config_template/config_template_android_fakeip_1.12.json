@@ -141,6 +141,17 @@
       "default": "dmit1-tcp"
     },
     {
+      "tag": "PERPLEXITY",
+      "type": "selector",
+      "outbounds": [
+        "Proxy",
+        "auto",
+        "direct",
+        "{all}"
+      ],
+      "default": "sg-tcp"
+    },
+    {
       "tag": "AI",
       "type": "selector",
       "outbounds": [
@@ -465,6 +476,12 @@
       },
       {
         "rule_set": [
+          "geosite-perplexity"
+        ],
+        "outbound": "PERPLEXITY"
+      },
+      {
+        "rule_set": [
           "geosite-ai",
           "geoip-ai"
         ],
@@ -597,6 +614,14 @@
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/ai.srs",
+        "download_detour": "direct",
+        "update_interval": "3d"
+      },
+      {
+        "tag": "geosite-perplexity",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/perplexity.srs",
         "download_detour": "direct",
         "update_interval": "3d"
       },
