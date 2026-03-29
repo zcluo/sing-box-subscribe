@@ -432,12 +432,7 @@
                 "udp_connect": true,
                 "outbound": "direct"
             },
-            {
-                "source_ip_cidr": "10.0.0.128/32",
-                "action": "route",
-                "udp_connect": true,
-                "outbound": "Compiler"
-            },
+            
             {
                 "port_range": [
                     "22:22",
