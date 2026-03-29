@@ -183,7 +183,7 @@
                 "direct",
                 "{all}"
             ],
-            "default": "dmit1-tcp"
+            "default": "dmit2-tcp"
         },
         {
             "tag": "PERPLEXITY",
@@ -194,7 +194,7 @@
                 "direct",
                 "{all}"
             ],
-            "default": "sg-tcp"
+            "default": "bwh1-tcp"
         },
         {
             "tag": "AI",
@@ -381,7 +381,7 @@
                 "direct",
                 "{all}"
             ],
-            "default": "dmit-tcp"
+            "default": "dmit2-tcp"
         },
         {
             "tag": "Global",
