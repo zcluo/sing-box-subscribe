@@ -87,9 +87,6 @@
             "tag": "mixed1-in",
             "listen": "::",
             "listen_port": 2336,
-            "sniff": true,
-            "sniff_override_destination": true,
-            "domain_strategy": "prefer_ipv4",
             "tcp_fast_open": true,
             "tcp_multi_path": true,
             "udp_fragment": true,
@@ -100,9 +97,6 @@
             "tag": "mixed-in",
             "listen": "::",
             "listen_port": 2334,
-            "sniff": true,
-            "sniff_override_destination": true,
-            "domain_strategy": "prefer_ipv4",
             "tcp_fast_open": true,
             "tcp_multi_path": true,
             "udp_fragment": true,
@@ -386,7 +380,17 @@
                     "mixed-in",
                     "mixed1-in"
                 ],
-                "action": "sniff"
+                "action": "sniff",
+                "timeout": "1s"
+            },
+            {
+                "inbound": [
+                    "tun-in",
+                    "mixed-in",
+                    "mixed1-in"
+                ],
+                "action": "resolve",
+                "strategy": "prefer_ipv4"
             },
             {
                 "type": "logical",
