@@ -366,7 +366,7 @@
         "rules": [
             {
                 "inbound": [
-                    "tun-in",
+                    
                     "mixed-in"
                 ],
                 "action": "sniff",
@@ -374,7 +374,7 @@
             },
             {
                 "inbound": [
-                    "tun-in",
+                    
                     "mixed-in"
                 ],
                 "action": "resolve",
@@ -417,6 +417,15 @@
                     "yacd.metacubex.one",
                     "yacd.haishan.me",
                     "d.metacubex.one"
+                ],
+                "outbound": "direct"
+            },
+            {
+                "domain": [
+                    "emex.top",
+                    "nb.emex.top",
+                    "dt.emex.top",
+                    "www.emex.top"
                 ],
                 "outbound": "direct"
             },
