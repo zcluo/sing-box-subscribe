@@ -170,8 +170,7 @@
             ],
             "endpoint_independent_nat": false,
             "udp_timeout": "1m",
-            "stack": "mixed",
-            "domain_strategy": "prefer_ipv4"
+            "stack": "mixed"
         }
     ],
     "outbounds": [
