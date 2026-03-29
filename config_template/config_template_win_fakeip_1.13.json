@@ -376,7 +376,7 @@
         "rules": [
             {
                 "inbound": [
-                    "tun-in",
+                    
                     "mixed-in",
                     "mixed1-in"
                 ],
@@ -385,7 +385,7 @@
             },
             {
                 "inbound": [
-                    "tun-in",
+                    
                     "mixed-in",
                     "mixed1-in"
                 ],
